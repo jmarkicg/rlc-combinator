@@ -5,6 +5,6 @@ import org.springframework.context.annotation.Configuration;
 
 @ComponentScan("hr.markic.rlc")
 @Configuration
-public class AConfig {
+public class AppConfig {
 
 }
