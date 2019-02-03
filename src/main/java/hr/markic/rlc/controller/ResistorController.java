@@ -1,7 +1,7 @@
 package hr.markic.rlc.controller;
 
-import hr.markic.rlc.domain.Capacitor;
-import hr.markic.rlc.service.CapacitorService;
+import hr.markic.rlc.domain.Resistor;
+import hr.markic.rlc.service.ResistorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,19 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/capacitor")
-public class CapacitorController {
+@RequestMapping("/api/resistor")
+public class ResistorController {
 
-    CapacitorService capacitorService;
+    ResistorService resistorService;
 
     @Autowired
-    public CapacitorController(CapacitorService service){
-        this.capacitorService = service;
+    public ResistorController(ResistorService service){
+        this.resistorService = service;
     }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public List<Capacitor> findAll(){
-        List<Capacitor> list = capacitorService.findAll();
+    public List<Resistor> findAll(){
+        List<Resistor> list = resistorService.findAll();
         return list;
     }
 }

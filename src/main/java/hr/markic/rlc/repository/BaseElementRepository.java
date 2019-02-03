@@ -8,13 +8,13 @@ import org.springframework.data.repository.NoRepositoryBean;
 import java.util.List;
 
 @NoRepositoryBean
-public interface BaseElementRepository extends MongoRepository<BaseElement, String> {
+public interface BaseElementRepository<T extends BaseElement> extends MongoRepository<T, String> {
 
-    BaseElement findBy_id(ObjectId _id);
+    T findBy_id(ObjectId _id);
 
-    BaseElement save(BaseElement resistor);
+    T save(T resistor);
 
-    void delete(BaseElement resistor);
+    void delete(T resistor);
 
-    List<BaseElement> findAll();
+    List<T> findAll();
 }

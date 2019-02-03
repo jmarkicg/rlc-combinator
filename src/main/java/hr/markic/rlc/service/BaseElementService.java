@@ -3,40 +3,29 @@ package hr.markic.rlc.service;
 import hr.markic.rlc.domain.BaseElement;
 import hr.markic.rlc.repository.BaseElementRepository;
 import org.bson.types.ObjectId;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
-@Service
-public class BaseElementService {
+@Transactional
+public class BaseElementService<T extends BaseElement> {
 
     BaseElementRepository elementRepository;
 
-    public BaseElementService(){
-
+    T save(T element){
+        return (T) elementRepository.save(element);
     }
 
-    @Autowired
-    public BaseElementService(BaseElementRepository baseElementRepository){
-        this.elementRepository = baseElementRepository;
-    }
-
-    BaseElement save(BaseElement element){
-        return elementRepository.save(element);
-    }
-
-    void delete(BaseElement element){
+    void delete(T element){
         elementRepository.delete(element);
     }
 
-    public BaseElement findBy_id(ObjectId id){
-        return elementRepository.findBy_id(id);
+    public T findBy_id(ObjectId id){
+        return (T) elementRepository.findBy_id(id);
     }
 
-    public List<BaseElement> findAll(){
+    public List<T> findAll(){
         return elementRepository.findAll();
     }
-
 
 }
