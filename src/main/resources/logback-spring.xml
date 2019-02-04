@@ -44,14 +44,14 @@
         <appender-ref ref="Console" />
     </logger>
 
-    <!--<logger name="org.hibernate.SQL" level="DEBUG" />-->
-    <!--<logger name="org.hibernate.type" level="TRACE" />-->
+    <logger name="org.springframework.data.mongodb.core" level="DEBUG" />
 
+    <!--logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG-->
     <!--put to DEBUG level to debug-->
-    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" additivity="false" level="ERROR" >
-        <level value="ERROR" />
-        <appender-ref ref="RollingFile" />
-        <appender-ref ref="Console" />
-    </logger>
+    <!--<logger name="org.hibernate.type.descriptor.sql.BasicBinder" additivity="false" level="ERROR" >-->
+        <!--<level value="ERROR" />-->
+        <!--<appender-ref ref="RollingFile" />-->
+        <!--<appender-ref ref="Console" />-->
+    <!--</logger>-->
 
 </configuration>
