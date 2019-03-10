@@ -730,3 +730,259 @@ Caused by: java.lang.NullPointerException: null
 2019-02-03 12:25:11,102 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 16.837 seconds (JVM running for 28.585)
 2019-02-03 12:25:11,110 INFO hr.markic.rlc.RlcCombinatorApplication [main] Application started.
 2019-02-03 12:41:28,770 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-18] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-10 11:25:49,084 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplicationTests on hrgovici with PID 8551 (started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-10 11:25:49,102 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-10 11:25:49,104 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-10 11:25:51,121 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-10 11:25:51,123 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 11:25:51,251 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 116ms. Found 2 repository interfaces.
+2019-03-10 11:25:52,647 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-10 11:25:52,841 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c84e6302809442167395ac3', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2019-03-10 11:25:53,335 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-10 11:25:53,530 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-10 11:25:54,631 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-10 11:25:55,354 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplicationTests in 7.285 seconds (JVM running for 9.019)
+2019-03-10 11:25:55,813 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-10 12:02:12,506 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 8875 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-10 12:02:12,524 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-10 12:02:12,526 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-10 12:02:13,473 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-10 12:02:13,474 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 12:02:13,565 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 84ms. Found 2 repository interfaces.
+2019-03-10 12:02:14,743 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-10 12:02:14,768 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-10 12:02:14,785 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-10 12:02:14,785 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-10 12:02:14,795 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-10 12:02:14,958 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-10 12:02:14,959 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2317 ms
+2019-03-10 12:02:15,446 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-10 12:02:15,646 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c84eeb728094422ab8d06ab', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2019-03-10 12:02:16,050 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-10 12:02:16,262 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-10 12:02:16,575 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-10 12:02:16,815 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-10 12:02:16,856 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-10 12:02:16,860 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 5.724 seconds (JVM running for 9.408)
+2019-03-10 12:02:16,864 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-10 12:08:19,051 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-15] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-10 12:24:25,061 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 11429 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-10 12:24:25,089 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-10 12:24:25,090 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-10 12:24:26,307 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-10 12:24:26,308 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 12:24:26,406 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 92ms. Found 2 repository interfaces.
+2019-03-10 12:24:27,621 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-10 12:24:27,658 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-10 12:24:27,674 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-10 12:24:27,675 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-10 12:24:27,698 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-10 12:24:27,806 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-10 12:24:27,806 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2546 ms
+2019-03-10 12:24:28,361 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-10 12:24:28,676 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c84f3ec2809442ca5fd11d1', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2019-03-10 12:24:28,687 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c84f3ec2809442ca5fd11d1', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4073527}
+2019-03-10 12:24:28,942 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-10 12:24:29,074 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-10 12:24:29,396 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-10 12:24:29,649 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-10 12:24:29,690 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-10 12:24:29,695 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 6.26 seconds (JVM running for 8.19)
+2019-03-10 12:24:29,698 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-10 12:24:39,952 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-10 12:24:39,958 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2019-03-10 12:24:39,972 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 14 ms
+2019-03-10 12:24:40,112 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 12:24:40,146 INFO com.mongodb.diagnostics.logging.SLF4JLogger [http-nio-8080-exec-2] Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2019-03-10 12:25:26,109 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 12:26:49,712 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-16] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-10 12:30:15,111 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 11846 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-10 12:30:15,134 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-10 12:30:15,138 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-10 12:30:16,627 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-10 12:30:16,628 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 12:30:16,729 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 94ms. Found 2 repository interfaces.
+2019-03-10 12:30:17,842 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-10 12:30:17,865 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-10 12:30:17,879 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-10 12:30:17,880 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-10 12:30:17,890 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-10 12:30:17,999 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-10 12:30:17,999 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2616 ms
+2019-03-10 12:30:18,466 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-10 12:30:18,808 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c84f54a2809442e46fef292', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+2019-03-10 12:30:18,826 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c84f54a2809442e46fef292', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6705580}
+2019-03-10 12:30:19,129 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-10 12:30:19,268 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-10 12:30:19,758 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-10 12:30:20,085 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-10 12:30:20,119 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-10 12:30:20,125 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 8.322 seconds (JVM running for 11.523)
+2019-03-10 12:30:20,128 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-10 12:30:28,135 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-10 12:30:28,135 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-03-10 12:30:28,146 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 11 ms
+2019-03-10 12:30:28,260 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 12:30:28,309 INFO com.mongodb.diagnostics.logging.SLF4JLogger [http-nio-8080-exec-1] Opened connection [connectionId{localValue:2, serverValue:10}] to localhost:27017
+2019-03-10 12:33:35,553 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 12:34:16,260 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 12:35:40,761 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 12:35:55,218 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-18] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-10 20:18:11,815 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 30511 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-10 20:18:11,858 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-10 20:18:11,873 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-10 20:18:18,730 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-10 20:18:18,736 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:18:19,514 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 715ms. Found 2 repository interfaces.
+2019-03-10 20:18:31,286 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-10 20:18:31,692 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-10 20:18:31,771 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-10 20:18:31,773 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-10 20:18:31,910 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-10 20:18:33,213 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-10 20:18:33,239 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 20715 ms
+2019-03-10 20:18:36,609 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-10 20:18:37,494 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c85630c280944772ffdba05', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2019-03-10 20:18:37,616 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c85630c280944772ffdba05', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=34917003}
+2019-03-10 20:18:39,928 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-10 20:18:41,078 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-10 20:18:42,824 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-10 20:18:43,608 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-10 20:18:43,743 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-10 20:18:43,752 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 44.93 seconds (JVM running for 99.978)
+2019-03-10 20:18:43,758 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-10 20:19:05,693 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:19:05,698 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-03-10 20:19:05,780 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-10 20:19:05,784 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-03-10 20:19:05,811 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 26 ms
+2019-03-10 20:19:06,181 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:19:06,269 INFO com.mongodb.diagnostics.logging.SLF4JLogger [http-nio-8080-exec-1] Opened connection [connectionId{localValue:2, serverValue:16}] to localhost:27017
+2019-03-10 20:36:13,819 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:36:13,838 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-03-10 20:36:13,918 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:37:41,870 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:37:41,883 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-03-10 20:37:41,951 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:38:04,690 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:38:04,700 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-03-10 20:38:04,791 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:38:40,377 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:38:40,389 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-03-10 20:38:40,449 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:39:57,075 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:39:57,079 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-10 20:39:57,105 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:45:46,723 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:45:46,730 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-10 20:45:46,810 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:46:54,363 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:46:54,371 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-03-10 20:46:54,390 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:47:04,566 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:47:04,578 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-03-10 20:47:04,609 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:51:43,950 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:51:43,962 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-03-10 20:51:43,985 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:51:53,512 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:53:16,593 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:53:16,596 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-10 20:53:16,633 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:53:27,198 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:53:27,212 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-03-10 20:53:27,247 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:53:58,349 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:53:58,378 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-03-10 20:53:58,419 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:54:39,259 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:54:39,324 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 64ms. Found 0 repository interfaces.
+2019-03-10 20:54:39,410 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:55:10,764 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:55:10,788 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-03-10 20:55:10,866 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:55:35,206 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:55:35,215 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-10 20:55:35,242 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:57:03,488 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:57:03,504 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-03-10 20:57:03,552 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:58:30,401 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:58:30,422 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-03-10 20:58:30,493 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:58:54,735 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:58:54,744 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-03-10 20:58:54,780 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 20:59:42,147 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 20:59:42,188 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-03-10 20:59:42,225 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:05:01,867 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:05:01,871 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-03-10 21:05:01,902 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:09:23,138 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:09:23,153 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-03-10 21:09:23,195 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:12:00,581 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:12:00,602 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-10 21:12:00,642 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:12:36,548 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:12:36,563 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-03-10 21:12:36,595 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:13:24,712 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:13:24,731 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-03-10 21:13:24,799 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:31:05,908 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:31:05,939 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-10 21:31:05,970 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:31:14,575 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:31:52,527 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:31:52,543 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-03-10 21:31:52,595 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:32:01,049 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:32:23,119 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:32:23,125 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-10 21:32:23,151 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 21:33:55,328 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 21:33:55,349 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-03-10 21:33:55,403 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 22:55:57,850 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 22:55:59,328 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Finished Spring Data repository scanning in 410ms. Found 0 repository interfaces.
+2019-03-10 22:56:01,058 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 22:56:06,783 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 22:56:07,055 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 22:56:55,498 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 22:56:55,539 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-03-10 22:56:55,719 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-10 22:57:29,252 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-10 22:57:29,276 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-03-10 22:57:29,324 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
