@@ -12,12 +12,16 @@ public class BaseElementService<T extends BaseElement> {
 
     BaseElementRepository elementRepository;
 
-    T save(T element){
+    public T save(T element){
         return (T) elementRepository.save(element);
     }
 
-    void delete(T element){
+    public void delete(T element){
         elementRepository.delete(element);
+    }
+
+    public void deleteById(ObjectId _id){
+        elementRepository.deleteById(_id);
     }
 
     public T findBy_id(ObjectId id){

@@ -1,12 +1,11 @@
 package hr.markic.rlc.controller;
 
 import hr.markic.rlc.domain.Capacitor;
+import hr.markic.rlc.domain.Resistor;
 import hr.markic.rlc.service.CapacitorService;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,5 +25,15 @@ public class CapacitorController {
     public List<Capacitor> findAll(){
         List<Capacitor> list = capacitorService.findAll();
         return list;
+    }
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public Capacitor save(@RequestBody Capacitor capacitor){
+        return capacitorService.save(capacitor);
+    }
+
+    @DeleteMapping(value = "/delete/{id}")
+    public void delete(@PathVariable String id){
+        capacitorService.deleteById(new ObjectId(id));
     }
 }

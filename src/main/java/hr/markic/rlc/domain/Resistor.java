@@ -8,13 +8,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection ="resistors")
 public class Resistor extends BaseElement {
 
-    Integer volumen;
+    Float volume;
 
-    public Integer getVolumen() {
-        return volumen;
+    public Float getVolume() {
+        return volume;
     }
 
-    public void setVolumen(Integer volumen) {
-        this.volumen = volumen;
+    public void setVolume(Float volume) {
+        this.volume = volume;
     }
 }
