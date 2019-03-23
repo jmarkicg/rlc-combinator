@@ -1,60 +1,865 @@
-2019-03-12 00:00:21,818 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:01:09,316 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:01:43,622 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:03:28,080 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:03:35,993 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] Saving Document containing fields: [_id, type, _class]
-2019-03-12 00:03:36,194 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:03:57,449 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:04:12,868 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:04:30,583 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:04:34,928 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] Saving Document containing fields: [_id, type, _class]
-2019-03-12 00:04:35,120 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:05:11,237 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:10:00,519 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:10:47,776 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] Saving Document containing fields: [_id, type, _class]
-2019-03-12 00:10:48,803 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:11:39,183 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:11:42,594 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] Saving Document containing fields: [_id, type, _class]
-2019-03-12 00:11:42,816 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:11:49,883 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] Saving Document containing fields: [_id, type, value, _class]
-2019-03-12 00:11:50,341 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:12:45,742 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:12:56,723 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] Saving Document containing fields: [_id, type, value, numItems, _class]
-2019-03-12 00:12:56,895 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:13:07,810 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] Inserting Document containing fields: [_class] in collection: capacitors
-2019-03-12 00:13:07,926 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:13:17,341 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] Saving Document containing fields: [_id, capacitorType, description, _class]
-2019-03-12 00:13:17,478 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:13:19,920 DEBUG org.springframework.data.mongodb.core.MongoTemplate$9 [http-nio-8080-exec-4] Remove using query: { "_id" : { "$oid" : "5c86eb8328094471290a7c91" } } in collection: capacitors.
-2019-03-12 00:13:19,954 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:13:22,681 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] Inserting Document containing fields: [_class] in collection: capacitors
-2019-03-12 00:13:22,827 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:14:18,324 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:16:49,579 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:17:06,764 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:17:11,445 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:17:13,690 DEBUG org.springframework.data.mongodb.core.MongoTemplate$9 [http-nio-8080-exec-4] Remove using query: { "_id" : { "$oid" : "5c86eb9228094471290a7c92" } } in collection: capacitors.
-2019-03-12 00:17:13,731 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:17:17,219 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] Inserting Document containing fields: [_class] in collection: capacitors
-2019-03-12 00:17:17,349 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:17:30,089 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] Saving Document containing fields: [_id, capacitorType, _class]
-2019-03-12 00:17:30,224 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:18:12,644 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:18:16,733 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:18:18,309 DEBUG org.springframework.data.mongodb.core.MongoTemplate$9 [http-nio-8080-exec-4] Remove using query: { "_id" : { "$oid" : "5c86ec7d28094471290a7c93" } } in collection: capacitors.
-2019-03-12 00:18:18,354 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:18:23,595 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:18:40,094 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:19:35,130 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:21:04,766 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:21:40,879 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] Saving Document containing fields: [_id, capacitorType, type, value, numItems, _class]
-2019-03-12 00:21:41,079 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:21:51,923 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] Saving Document containing fields: [_id, capacitorType, type, value, numItems, _class]
-2019-03-12 00:21:52,112 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-4] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:21:59,995 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] Saving Document containing fields: [_id, capacitorType, type, value, description, numItems, _class]
-2019-03-12 00:22:00,149 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
-2019-03-12 00:22:06,067 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
-2019-03-12 00:22:21,545 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] Inserting Document containing fields: [volume, type, value, description, numItems, _class] in collection: resistors
-2019-03-12 00:22:21,718 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
-2019-03-12 00:22:28,816 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] Saving Document containing fields: [_id, volume, type, value, description, numItems, _class]
-2019-03-12 00:22:29,007 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 09:17:25,656 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 12704 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-23 09:17:25,665 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-23 09:17:25,666 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-23 09:17:29,779 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-23 09:17:29,785 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 09:17:30,275 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 462ms. Found 2 repository interfaces.
+2019-03-23 09:17:33,436 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-23 09:17:33,527 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-23 09:17:33,557 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-23 09:17:33,566 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-23 09:17:33,589 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-23 09:17:33,907 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-23 09:17:33,908 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7534 ms
+2019-03-23 09:17:34,888 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-23 09:17:35,550 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c95eb9e28094431a022ab07', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:78}] to localhost:27017
+2019-03-23 09:17:35,573 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c95eb9e28094431a022ab07', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9708127}
+2019-03-23 09:17:36,357 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-23 09:17:36,895 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-23 09:17:38,169 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 09:17:38,732 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-23 09:17:38,876 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-23 09:17:38,884 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 18.099 seconds (JVM running for 42.62)
+2019-03-23 09:17:38,889 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-23 09:18:12,661 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-23 09:18:12,662 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2019-03-23 09:18:12,682 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 19 ms
+2019-03-23 09:18:12,994 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at hr.markic.rlc.service.CombinatorService.generateCombinations(CombinatorService.java:81)
+	at hr.markic.rlc.service.CombinatorService.generateCombinationModels(CombinatorService.java:40)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 09:26:22,334 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 09:26:22,357 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-03-23 09:30:09,850 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 09:30:09,869 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-03-23 09:35:45,292 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 09:35:45,297 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-23 10:23:46,890 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:23:46,913 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-03-23 10:27:56,569 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:27:56,575 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-03-23 10:30:17,703 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:30:17,710 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-23 10:32:30,879 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:32:30,886 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-23 10:35:25,955 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:35:25,963 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-23 10:37:09,634 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:37:09,667 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2019-03-23 10:40:43,187 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:40:43,190 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-03-23 10:45:49,998 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:45:50,006 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-03-23 10:47:28,977 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:47:28,984 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-03-23 10:49:32,617 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:49:32,627 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-23 10:50:39,125 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:50:39,130 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-23 10:52:31,755 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:52:31,761 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-03-23 10:52:58,866 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-19] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:52:58,871 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-19] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-23 10:52:58,909 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-19] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 10:53:16,699 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 17164 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-23 10:53:16,713 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-23 10:53:16,714 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-23 10:53:17,959 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-23 10:53:17,962 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:53:18,102 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 130ms. Found 2 repository interfaces.
+2019-03-23 10:53:19,850 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-23 10:53:19,885 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-23 10:53:19,904 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-23 10:53:19,905 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-23 10:53:19,917 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-23 10:53:20,104 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-23 10:53:20,105 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3261 ms
+2019-03-23 10:53:20,711 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-23 10:53:20,859 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c960210280944430ca43d93', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:79}] to localhost:27017
+2019-03-23 10:53:20,878 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c960210280944430ca43d93', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12966279}
+2019-03-23 10:53:21,273 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-23 10:53:21,489 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-23 10:53:21,956 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 10:53:22,332 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-23 10:53:22,412 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-23 10:53:22,427 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 7.401 seconds (JVM running for 16.621)
+2019-03-23 10:53:22,431 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-23 10:53:42,406 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-23 10:53:42,409 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-03-23 10:53:42,428 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 19 ms
+2019-03-23 10:58:22,426 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 10:58:22,444 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-03-23 11:40:05,355 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 11:40:05,377 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-03-23 11:43:28,065 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 11:43:28,080 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-03-23 11:43:44,470 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 11:43:44,483 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-03-23 12:06:44,604 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:06:44,611 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-23 12:06:45,072 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at hr.markic.rlc.rest.mapper.CombinationMapper$$M$_jr_188715B5D3F2D31F_2.prepareCombinationModelList(CombinationMapper.java:33)
+	at sun.reflect.GeneratedMethodAccessor117.invoke(Unknown Source)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:113)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:85)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithOneParam(SourceFile:73)
+	at hr.markic.rlc.rest.mapper.CombinationMapper$$M$_jr_188715B5D3F2D31F_1.prepareCombinationModelList(CombinationMapper.java:65534)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_188715B5D3F2D31F_4.generateCombinationModels(CombinatorService.java:57)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:113)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 12:06:52,045 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-19] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 12:07:12,818 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 20107 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-23 12:07:12,839 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-23 12:07:12,840 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-23 12:07:15,031 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-23 12:07:15,034 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:07:15,196 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 150ms. Found 2 repository interfaces.
+2019-03-23 12:07:16,959 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-23 12:07:16,993 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-23 12:07:17,012 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-23 12:07:17,012 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-23 12:07:17,024 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-23 12:07:17,176 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-23 12:07:17,177 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3982 ms
+2019-03-23 12:07:17,787 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-23 12:07:17,935 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c9613652809444e8be698ca', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:80}] to localhost:27017
+2019-03-23 12:07:17,945 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c9613652809444e8be698ca', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5938524}
+2019-03-23 12:07:18,365 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-23 12:07:18,580 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-23 12:07:19,061 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 12:07:19,451 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-23 12:07:19,502 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-23 12:07:19,509 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 9.661 seconds (JVM running for 22.179)
+2019-03-23 12:07:19,513 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-23 12:07:23,750 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-23 12:07:23,751 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-03-23 12:07:23,772 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 20 ms
+2019-03-23 12:07:24,061 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at hr.markic.rlc.rest.mapper.CombinationMapper.prepareCombinationModelList(CombinationMapper.java:33)
+	at hr.markic.rlc.service.CombinatorService.generateCombinationModels(CombinatorService.java:57)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 12:07:46,172 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at hr.markic.rlc.rest.mapper.CombinationMapper.prepareCombinationModelList(CombinationMapper.java:33)
+	at hr.markic.rlc.service.CombinatorService.generateCombinationModels(CombinatorService.java:57)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 12:07:59,538 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-19] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 12:09:06,837 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 20475 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-23 12:09:06,851 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-23 12:09:06,855 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-23 12:09:09,084 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-23 12:09:09,086 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:09:09,299 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 201ms. Found 2 repository interfaces.
+2019-03-23 12:09:13,150 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-23 12:09:13,207 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-23 12:09:13,232 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-23 12:09:13,233 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-23 12:09:13,246 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-23 12:09:13,462 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-23 12:09:13,464 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6226 ms
+2019-03-23 12:09:14,798 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-23 12:09:15,115 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c9613da2809444ffb55d17b', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:81}] to localhost:27017
+2019-03-23 12:09:15,141 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c9613da2809444ffb55d17b', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19106362}
+2019-03-23 12:09:15,746 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-23 12:09:16,046 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-23 12:09:16,122 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'combinatorController' defined in file [/home/hrgovici/IdeaProjects/rlc-combinator/target/classes/hr/markic/rlc/rest/controller/CombinatorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'combinatorService' defined in file [/home/hrgovici/IdeaProjects/rlc-combinator/target/classes/hr/markic/rlc/service/CombinatorService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'combinationMapper' defined in file [/home/hrgovici/IdeaProjects/rlc-combinator/target/classes/hr/markic/rlc/rest/mapper/CombinationMapper.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'combinatorService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2019-03-23 12:09:16,135 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2019-03-23 12:09:16,197 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-23 12:09:16,213 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   combinatorController defined in file [/home/hrgovici/IdeaProjects/rlc-combinator/target/classes/hr/markic/rlc/rest/controller/CombinatorController.class]
+┌─────┐
+|  combinatorService defined in file [/home/hrgovici/IdeaProjects/rlc-combinator/target/classes/hr/markic/rlc/service/CombinatorService.class]
+↑     ↓
+|  combinationMapper defined in file [/home/hrgovici/IdeaProjects/rlc-combinator/target/classes/hr/markic/rlc/rest/mapper/CombinationMapper.class]
+└─────┘
+
+
+2019-03-23 12:11:00,589 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 20781 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-23 12:11:00,614 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-23 12:11:00,621 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-23 12:11:03,871 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-23 12:11:03,878 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:11:04,139 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 245ms. Found 2 repository interfaces.
+2019-03-23 12:11:06,365 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-23 12:11:06,412 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-23 12:11:06,434 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-23 12:11:06,435 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-23 12:11:06,448 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-23 12:11:06,617 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-23 12:11:06,618 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5661 ms
+2019-03-23 12:11:07,358 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-23 12:11:07,549 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c96144b280944512dad85e9', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:82}] to localhost:27017
+2019-03-23 12:11:07,575 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c96144b280944512dad85e9', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20652093}
+2019-03-23 12:11:08,032 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-23 12:11:08,263 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-23 12:11:08,865 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 12:11:09,255 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-23 12:11:09,306 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-23 12:11:09,312 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 11.893 seconds (JVM running for 22.481)
+2019-03-23 12:11:09,317 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-23 12:11:11,463 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-23 12:11:11,465 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2019-03-23 12:11:11,484 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 18 ms
+2019-03-23 12:11:34,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:11:34,410 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-03-23 12:12:23,526 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:12:23,547 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-03-23 12:12:35,996 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.ConcurrentModificationException] with root cause
+java.util.ConcurrentModificationException: null
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_1.removeEmptyNodes(CombinatorService.java:66)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_1.removeEmptyNodes(CombinatorService.java:81)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_1.generateCombinationModels(CombinatorService.java:42)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:113)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 12:12:55,583 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.ConcurrentModificationException] with root cause
+java.util.ConcurrentModificationException: null
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_1.removeEmptyNodes(CombinatorService.java:66)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_1.removeEmptyNodes(CombinatorService.java:81)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_1.generateCombinationModels(CombinatorService.java:42)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:113)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 12:14:27,401 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:14:27,410 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-03-23 12:18:17,867 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:18:17,876 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-03-23 12:38:43,812 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:38:43,824 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-9] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-03-23 12:38:58,949 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:38:58,966 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-03-23 12:40:46,880 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:40:46,886 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-23 12:42:56,198 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:42:56,200 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-23 12:44:42,344 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:44:42,350 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-23 12:48:10,466 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:48:10,472 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-6] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-03-23 12:58:40,447 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 12:58:40,456 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-03-23 12:58:50,554 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.ConcurrentModificationException] with root cause
+java.util.ConcurrentModificationException: null
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_9.removeUnNeededNodes(CombinatorService.java:72)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_9.generateCombinationModels(CombinatorService.java:58)
+	at sun.reflect.GeneratedMethodAccessor108.invoke(Unknown Source)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:113)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 13:28:20,347 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 13:28:20,353 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-8] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-23 13:28:20,860 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.ConcurrentModificationException] with root cause
+java.util.ConcurrentModificationException: null
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_10.removeUnNeededNodes(CombinatorService.java:72)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_10.generateCombinationModels(CombinatorService.java:58)
+	at sun.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:113)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 13:29:22,827 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 13:29:22,837 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-03-23 13:29:23,419 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.ConcurrentModificationException] with root cause
+java.util.ConcurrentModificationException: null
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_11.removeUnNeededNodes(CombinatorService.java:72)
+	at hr.markic.rlc.service.CombinatorService$$M$_jr_6A192CFE0F87A1F3_11.generateCombinationModels(CombinatorService.java:58)
+	at sun.reflect.GeneratedMethodAccessor110.invoke(Unknown Source)
+	at com.zeroturnaround.jrebelbase.facade.Forward.invokeWithParams2(SourceFile:113)
+	at hr.markic.rlc.rest.controller.CombinatorController.generateCombinations(CombinatorController.java:35)
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 13:34:59,841 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 13:34:59,856 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-03-23 13:35:29,165 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 13:35:29,169 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-03-23 13:36:08,838 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 13:36:08,843 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-23 13:42:59,242 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 13:42:59,264 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-1] Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-03-23 14:02:10,913 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 14:02:10,927 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-03-23 14:03:11,694 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 14:03:11,710 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-03-23 14:04:41,359 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 14:04:41,371 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-10] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-23 14:06:30,623 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 14:06:30,627 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-4] Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-03-23 14:06:50,635 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 14:06:50,638 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-7] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-23 16:52:13,706 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-19] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 16:52:34,317 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-19] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-03-23 16:52:26,639 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c96144b280944512dad85e9', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server localhost:27017. The full response is { "ok" : 0.0, "errmsg" : "interrupted at shutdown", "code" : 11600, "codeName" : "InterruptedAtShutdown" }
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:246)
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:175)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:293)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:124)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-23 16:52:34,333 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-19] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-23 21:19:53,043 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on hrgovici with PID 6593 (/home/hrgovici/IdeaProjects/rlc-combinator/target/classes started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-03-23 21:19:53,056 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-03-23 21:19:53,058 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-03-23 21:19:55,808 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-23 21:19:55,811 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 21:19:56,139 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 305ms. Found 2 repository interfaces.
+2019-03-23 21:19:59,489 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-03-23 21:19:59,585 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-23 21:19:59,605 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-03-23 21:19:59,605 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-03-23 21:19:59,641 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-23 21:20:00,434 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-03-23 21:20:00,434 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7094 ms
+2019-03-23 21:20:01,246 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-23 21:20:01,486 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c9694f128094419c196628d', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2019-03-23 21:20:01,525 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5c9694f128094419c196628d', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24516419}
+2019-03-23 21:20:02,185 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Capacitor for index information.
+2019-03-23 21:20:02,654 DEBUG org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator [main] Analyzing class class hr.markic.rlc.domain.Resistor for index information.
+2019-03-23 21:20:03,590 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 21:20:04,132 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-03-23 21:20:04,433 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-23 21:20:04,493 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 17.407 seconds (JVM running for 48.409)
+2019-03-23 21:20:04,510 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-03-23 21:20:30,146 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-23 21:20:30,146 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2019-03-23 21:20:30,185 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 38 ms
+2019-03-23 21:21:11,159 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 21:21:11,188 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-3] Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-03-23 21:30:37,017 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 21:30:37,023 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-2] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-03-23 21:33:20,629 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-23 21:33:20,636 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-8080-exec-5] Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-03-23 21:33:21,556 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:33:21,771 INFO com.mongodb.diagnostics.logging.SLF4JLogger [http-nio-8080-exec-5] Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2019-03-23 21:33:25,189 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:33:26,678 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:33:30,071 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] Saving Document containing fields: [_id, volume, type, value, description, numItems, _class]
+2019-03-23 21:33:30,447 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:33:45,885 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] Inserting Document containing fields: [type, value, description, numItems, _class] in collection: resistors
+2019-03-23 21:33:46,182 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:33:52,108 DEBUG org.springframework.data.mongodb.core.MongoTemplate$9 [http-nio-8080-exec-4] Remove using query: { "_id" : { "$oid" : "5c96982928094419c196628e" } } in collection: resistors.
+2019-03-23 21:33:52,180 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-5] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:34:25,096 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:34:30,116 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:34:44,310 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] Inserting Document containing fields: [type, value, description, numItems, _class] in collection: capacitors
+2019-03-23 21:34:44,558 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:34:46,603 DEBUG org.springframework.data.mongodb.core.MongoTemplate$9 [http-nio-8080-exec-2] Remove using query: { "_id" : { "$oid" : "5c96986428094419c196628f" } } in collection: capacitors.
+2019-03-23 21:34:46,624 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:34:50,109 DEBUG org.springframework.data.mongodb.core.MongoTemplate$9 [http-nio-8080-exec-5] Remove using query: { "_id" : { "$oid" : "5c86e71828094471290a7c90" } } in collection: capacitors.
+2019-03-23 21:34:50,136 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-6] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:34:54,590 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-7] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:35:03,777 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-8] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:35:04,650 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-9] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:35:45,021 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-10] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:36:01,375 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-1] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors
+2019-03-23 21:36:16,233 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-2] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Resistor in collection: resistors
+2019-03-23 21:36:18,303 DEBUG org.springframework.data.mongodb.core.MongoTemplate [http-nio-8080-exec-3] find using query: { } fields: Document{{}} for class: class hr.markic.rlc.domain.Capacitor in collection: capacitors

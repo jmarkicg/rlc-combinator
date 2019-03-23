@@ -1,6 +1,5 @@
-package hr.markic.rlc.controller;
+package hr.markic.rlc.rest.controller;
 
-import hr.markic.rlc.domain.Capacitor;
 import hr.markic.rlc.domain.Resistor;
 import hr.markic.rlc.service.ResistorService;
 import org.bson.types.ObjectId;

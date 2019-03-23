@@ -1,7 +1,6 @@
-package hr.markic.rlc.controller;
+package hr.markic.rlc.rest.controller;
 
 import hr.markic.rlc.domain.Capacitor;
-import hr.markic.rlc.domain.Resistor;
 import hr.markic.rlc.service.CapacitorService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
