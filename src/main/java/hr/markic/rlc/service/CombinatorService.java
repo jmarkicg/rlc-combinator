@@ -1,12 +1,14 @@
 package hr.markic.rlc.service;
 
-import hr.markic.rlc.domain.Capacitor;
+import hr.markic.rlc.domain.BaseElement;
 import hr.markic.rlc.enums.BaseElementEnum;
 import hr.markic.rlc.enums.CircuitEnum;
 import hr.markic.rlc.model.CircuitElement;
 import hr.markic.rlc.model.CombinationModel;
 import hr.markic.rlc.rest.mapper.CombinationMapper;
 import hr.markic.rlc.util.ObjectUtils;
+import hr.markic.rlc.util.TimeUtils;
+import org.mariuszgromada.math.mxparser.Expression;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +44,13 @@ public class CombinatorService {
     public List<CombinationModel> generateCombinationModels(Double value, Integer numItems, BaseElementEnum elementType) {
         List<CircuitElement> combinations = new ArrayList<>();
         CircuitElement root = new CircuitElement();
+        long ms = System.currentTimeMillis();
+        log.info("Started generating combinations");
         generateCombinations(numItems, 0, root, root, null, combinations);
+        long ms2 = System.currentTimeMillis();
+        log.info("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".");
+
+        log.info("Removing empty nodes from combinations.");
         //remove empty nodes
         for (CircuitElement combination  : combinations) {
             removeEmptyNodes(combination, true, false);
@@ -52,24 +60,33 @@ public class CombinatorService {
             removeEmptyNodes(combination, false, true);
         }
 
+        log.info("Removing duplicate combinations.");
         //remove duplicate combinations
         List<CircuitElement> filtratedCombs = new ArrayList<>();
         Set<String> setComb = new HashSet<>();
         for (CircuitElement combination  : combinations) {
-            String sign = CombinationMapper.getCombinationSignature(combination);
+            String sign = CombinationMapper.getCombinationSignature(combination, 1);
             if (!setComb.contains(sign)){
                 setComb.add(sign);
                 filtratedCombs.add(combination);
             }
         }
+        log.info("Final list of " + filtratedCombs.size() + " combinations.");
 
-        //iterate over combinations with elelemnt values and filter the list
+        //iterate over combinations with element values and filter the list
+        List<? extends BaseElement> listRLC;
         if (elementType.equals(BaseElementEnum.CAPACITOR)){
-            List<Capacitor> list = capacitorService.findAll();
+            listRLC = capacitorService.findAll();
+        } else if (elementType.equals(BaseElementEnum.RESISTOR)){
+            listRLC = resistorService.findAll();
         }
 
-        List<CombinationModel> modelList = CombinationMapper.prepareCombinationModelList(filtratedCombs);
-        System.out.println("Number of combinations: "  + modelList.size() +".");
+        Expression eh = new Expression("1+6/3+(4*5)");
+        Double h = eh.calculate() ;
+        log.info(h.toString());
+
+
+        List<CombinationModel> modelList = CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType);
         return modelList;
     }
 
