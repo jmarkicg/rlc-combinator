@@ -22,7 +22,7 @@ public class CombinatorController {
         this.combinatorService = combinatorService;
     }
 
-    @InitBinder ("elementType")
+    @InitBinder("elementType")
     public void initBinder(WebDataBinder dataBinder) {
         dataBinder.registerCustomEditor(BaseElementEnum.class, new BaseElementEnumConverter());
     }

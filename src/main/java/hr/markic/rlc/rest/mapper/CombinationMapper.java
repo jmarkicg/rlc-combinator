@@ -4,6 +4,8 @@ import hr.markic.rlc.enums.BaseElementEnum;
 import hr.markic.rlc.enums.CircuitEnum;
 import hr.markic.rlc.model.CircuitElement;
 import hr.markic.rlc.model.CombinationModel;
+import hr.markic.rlc.model.Permutation;
+import org.mariuszgromada.math.mxparser.Expression;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,25 +15,53 @@ public class CombinationMapper {
     /**
      * Prepare {@link CombinationModel} objects based on combinations.
      * @param combinations
+     * @param permutations
      * @return
      */
-    public static List<CombinationModel> prepareCombinationModelList(List<CircuitElement> combinations, BaseElementEnum elemType) {
+    public static List<CombinationModel> prepareCombinationModelList(List<CircuitElement> combinations, BaseElementEnum elemType, List<Double[]> permutations) {
         List<CombinationModel> modelList = null;
         if (combinations != null){
             modelList = new ArrayList<>();
 
             for (CircuitElement combination : combinations) {
-                CombinationModel model = new CombinationModel();
-                model.setCombinationElements(combination);
-                model.setCombString(getCombinationSignature(combination, 1));
-                model.setCombEquation(getCombinationEquation(combination, elemType, 1));
-                modelList.add(model);
+                String combString = setElementIndexes(getCombinationSignature(combination));
+                String combEquation = setElementIndexes(getCombinationEquation(combination, elemType));
+                for (Double[] permutation : permutations) {
+                    CombinationModel model = new CombinationModel();
+                    model.setCombinationElements(combination);
+                    model.setCombString(combString);
+                    model.setCombEquation(combEquation);
+                    Permutation perm = new Permutation();
+                    perm.setPermutation(permutation);
+                    String eq = model.getCombEquation();
+                    for (int i = 0; i <permutation.length ; i++) {
+                        eq = eq.replace("X" + (i+1), permutation[i].toString());
+                    }
+                    perm.setValue(calculate(eq));
+                    model.setPermutation(perm);
+                    modelList.add(model);
+                }
+
             }
         }
         return modelList;
     }
 
-    private static String getCombinationEquation(CircuitElement combination, BaseElementEnum elemType, Integer count) {
+    private static Double calculate(String eq) {
+        Expression eh = new Expression(eq);
+        return eh.calculate() ;
+    }
+
+    private static String setElementIndexes(String equation){
+        int count = 1;
+        while (equation.contains("E")){
+            equation = equation.replaceFirst("E", "X" + count);
+            count++;
+        }
+        return equation;
+    }
+
+    private static String getCombinationEquation(CircuitElement combination, BaseElementEnum elemType) {
         String comb = "";
         CircuitEnum type = combination.getCircuitType();
         CircuitEnum parentType = combination.getParent() != null? combination.getParent().getCircuitType() : null;
@@ -39,11 +69,10 @@ public class CombinationMapper {
         if (type.equals(CircuitEnum.ELEMENT)){
             if (parentType != null && (parentType.equals(CircuitEnum.PARALLEL) && elemType.equals(BaseElementEnum.RESISTOR)) ||
                     (parentType.equals(CircuitEnum.SERIES) && elemType.equals(BaseElementEnum.CAPACITOR))){
-                comb += "1/E" + count;
+                comb += "1/E";
             } else {
-                comb += "E" + count;
+                comb += "E";
             }
-            count += 1;
         }
 
         List<CircuitElement> elems = combination.getElementList();
@@ -58,7 +87,7 @@ public class CombinationMapper {
             }
 
             for (CircuitElement elem : elems) {
-                comb += getCombinationEquation(elem, elemType, count);
+                comb += getCombinationEquation(elem, elemType);
                 if (!elems.get(elems.size()-1).equals(elem)){
                     comb += " + ";
                 }
@@ -71,12 +100,11 @@ public class CombinationMapper {
     }
 
 
-    public static String getCombinationSignature(CircuitElement combination, Integer count) {
+    public static String getCombinationSignature(CircuitElement combination) {
         String comb = "";
         CircuitEnum type = combination.getCircuitType();
         if (type.equals(CircuitEnum.ELEMENT)){
-            comb += "E" + count;
-            count += 1;
+            comb += "E";
         }
         if (type.equals(CircuitEnum.PARALLEL)){
             comb += "||";
@@ -88,7 +116,7 @@ public class CombinationMapper {
         if (elems != null && elems.size() > 0){
             comb += "(";
             for (CircuitElement elem : elems) {
-                comb += getCombinationSignature(elem, count);
+                comb += getCombinationSignature(elem);
                 if (!elems.get(elems.size()-1).equals(elem)){
                     comb += ", ";
                 }

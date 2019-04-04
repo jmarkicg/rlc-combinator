@@ -14,24 +14,23 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 public class CombinatorService {
 
     CapacitorService capacitorService;
     ResistorService resistorService;
+    PermutationCombService permutationCombService;
 
     private static final Logger log = LoggerFactory.getLogger(CombinatorService.class);
 
     @Autowired
-    public CombinatorService(CapacitorService capacitorService, ResistorService resistorService){
+    public CombinatorService(CapacitorService capacitorService, ResistorService resistorService,
+                             PermutationCombService permutationCombService){
         this.capacitorService = capacitorService;
         this.resistorService = resistorService;
+        this.permutationCombService = permutationCombService;
     }
 
     /**
@@ -65,7 +64,7 @@ public class CombinatorService {
         List<CircuitElement> filtratedCombs = new ArrayList<>();
         Set<String> setComb = new HashSet<>();
         for (CircuitElement combination  : combinations) {
-            String sign = CombinationMapper.getCombinationSignature(combination, 1);
+            String sign = CombinationMapper.getCombinationSignature(combination);
             if (!setComb.contains(sign)){
                 setComb.add(sign);
                 filtratedCombs.add(combination);
@@ -74,19 +73,35 @@ public class CombinatorService {
         log.info("Final list of " + filtratedCombs.size() + " combinations.");
 
         //iterate over combinations with element values and filter the list
-        List<? extends BaseElement> listRLC;
+        List<? extends BaseElement> listRLC = null;
         if (elementType.equals(BaseElementEnum.CAPACITOR)){
             listRLC = capacitorService.findAll();
         } else if (elementType.equals(BaseElementEnum.RESISTOR)){
             listRLC = resistorService.findAll();
         }
 
-        Expression eh = new Expression("1+6/3+(4*5)");
-        Double h = eh.calculate() ;
-        log.info(h.toString());
+        log.info("Generating permutations.");
+        List<Double[]> permutations = permutationCombService.generatePermutations(listRLC, numItems, value);
+        log.info("Generated " + permutations.size() + " permutations.");
 
+        ms = System.currentTimeMillis();
+        log.info("Started calculation of permutations per combinations.");
+        List<CombinationModel> modelList = CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType, permutations);
+        ms2 = System.currentTimeMillis();
+        log.info("Generated " + modelList.size() + " permutations in "  +TimeUtils.formatMs(ms2-ms) + ".");
 
-        List<CombinationModel> modelList = CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType);
+        log.info("Started sorting combinations.");
+        modelList.sort(new Comparator<CombinationModel>() {
+            @Override
+            public int compare(CombinationModel o1, CombinationModel o2) {
+                Double s1 = Math.abs(o1.getPermutation().getValue() - value);
+                Double s2 = Math.abs(o2.getPermutation().getValue() - value);
+
+                return (int) (s1-s2);
+            }
+        });
+        log.info("Ended sorting combinations.");
+
         return modelList;
     }
 
