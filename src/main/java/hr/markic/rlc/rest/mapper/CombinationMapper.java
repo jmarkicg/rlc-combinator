@@ -4,7 +4,6 @@ import hr.markic.rlc.enums.BaseElementEnum;
 import hr.markic.rlc.enums.CircuitEnum;
 import hr.markic.rlc.model.CircuitElement;
 import hr.markic.rlc.model.CombinationModel;
-import hr.markic.rlc.model.Permutation;
 import org.mariuszgromada.math.mxparser.Expression;
 
 import java.util.ArrayList;
@@ -16,9 +15,13 @@ public class CombinationMapper {
      * Prepare {@link CombinationModel} objects based on combinations.
      * @param combinations
      * @param permutations
+     * @param allowedErrorPercentage
+     * @param value
      * @return
      */
-    public static List<CombinationModel> prepareCombinationModelList(List<CircuitElement> combinations, BaseElementEnum elemType, List<Double[]> permutations) {
+    public static List<CombinationModel> prepareCombinationModelList(List<CircuitElement> combinations, BaseElementEnum elemType,
+                                                                     List<Double[]> permutations, int allowedErrorPercentage,
+                                                                     Double value) {
         List<CombinationModel> modelList = null;
         if (combinations != null){
             modelList = new ArrayList<>();
@@ -31,20 +34,41 @@ public class CombinationMapper {
                     model.setCombinationElements(combination);
                     model.setCombString(combString);
                     model.setCombEquation(combEquation);
-                    Permutation perm = new Permutation();
-                    perm.setPermutation(permutation);
                     String eq = model.getCombEquation();
+                    String comb = model.getCombString();
                     for (int i = 0; i <permutation.length ; i++) {
                         eq = eq.replace("X" + (i+1), permutation[i].toString());
+                        comb = comb.replace("X" + (i+1), permutation[i].toString());
                     }
-                    perm.setValue(calculate(eq));
-                    model.setPermutation(perm);
-                    modelList.add(model);
+                    model.setCombEquationVaule(eq);
+                    model.setCombStringValue(comb);
+                    model.setValue(calculate(eq));
+                    model.setNumItems(permutation.length);
+                    model.setErrorPercentage(getAccuracy(model.getValue(), allowedErrorPercentage, value));
+                    if (checkAccuracy(model.getValue(), allowedErrorPercentage, value)){
+                        modelList.add(model);
+                    }
+
                 }
 
             }
         }
         return modelList;
+    }
+
+    private static double getAccuracy(Double value, int allowedErrorPercentage, Double requestedValue) {
+        Double diff = Math.abs(requestedValue - value);
+        double currErrorPerc =  (diff / requestedValue)*100;
+        return currErrorPerc;
+    }
+
+    private static boolean checkAccuracy(Double value, int allowedErrorPercentage, Double requestedValue) {
+        double currErrorPerc = getAccuracy(value, allowedErrorPercentage, requestedValue);
+        if (currErrorPerc <= allowedErrorPercentage){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     private static Double calculate(String eq) {

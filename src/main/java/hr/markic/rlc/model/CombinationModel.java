@@ -5,8 +5,12 @@ import java.util.List;
 public class CombinationModel {
     String combString;
     String combEquation;
+    String combStringValue;
+    String combEquationVaule;
     CircuitElement combinationElements;
-    Permutation permutation;
+    Double value;
+    int numItems;
+    double errorPercentage;
 
     public void setCombinationElements(CircuitElement combinationElements) {
         this.combinationElements = combinationElements;
@@ -28,11 +32,43 @@ public class CombinationModel {
         this.combEquation = combEquation;
     }
 
-    public Permutation getPermutation() {
-        return permutation;
+    public double getErrorPercentage() {
+        return errorPercentage;
     }
 
-    public void setPermutation(Permutation permutation) {
-        this.permutation = permutation;
+    public void setErrorPercentage(double errorPercentage) {
+        this.errorPercentage = errorPercentage;
+    }
+
+    public String getCombStringValue() {
+        return combStringValue;
+    }
+
+    public void setCombStringValue(String combStringValue) {
+        this.combStringValue = combStringValue;
+    }
+
+    public String getCombEquationVaule() {
+        return combEquationVaule;
+    }
+
+    public void setCombEquationVaule(String combEquationVaule) {
+        this.combEquationVaule = combEquationVaule;
+    }
+
+    public Double getValue() {
+        return value;
+    }
+
+    public void setValue(Double value) {
+        this.value = value;
+    }
+
+    public int getNumItems() {
+        return numItems;
+    }
+
+    public void setNumItems(int numItems) {
+        this.numItems = numItems;
     }
 }

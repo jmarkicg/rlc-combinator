@@ -1,5 +1,8 @@
 package hr.markic.rlc.service;
 
+import com.pusher.rest.Pusher;
+import hr.markic.rlc.config.PropertyConfig;
+import hr.markic.rlc.config.PusherConfig;
 import hr.markic.rlc.domain.BaseElement;
 import hr.markic.rlc.enums.BaseElementEnum;
 import hr.markic.rlc.enums.CircuitEnum;
@@ -38,18 +41,19 @@ public class CombinatorService {
      * @param value
      * @param numItems
      * @param elementType
+     * @param allowedErrorPercentage
      * @return
      */
-    public List<CombinationModel> generateCombinationModels(Double value, Integer numItems, BaseElementEnum elementType) {
+    public List<CombinationModel> generateCombinationModels(Double value, Integer numItems, BaseElementEnum elementType, int allowedErrorPercentage) {
         List<CircuitElement> combinations = new ArrayList<>();
         CircuitElement root = new CircuitElement();
         long ms = System.currentTimeMillis();
-        log.info("Started generating combinations");
+        logMessage("Started generating combinations");
         generateCombinations(numItems, 0, root, root, null, combinations);
         long ms2 = System.currentTimeMillis();
-        log.info("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".");
+        logMessage("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".");
 
-        log.info("Removing empty nodes from combinations.");
+        logMessage("Removing empty nodes from combinations.");
         //remove empty nodes
         for (CircuitElement combination  : combinations) {
             removeEmptyNodes(combination, true, false);
@@ -59,7 +63,7 @@ public class CombinatorService {
             removeEmptyNodes(combination, false, true);
         }
 
-        log.info("Removing duplicate combinations.");
+        logMessage("Removing duplicate combinations.");
         //remove duplicate combinations
         List<CircuitElement> filtratedCombs = new ArrayList<>();
         Set<String> setComb = new HashSet<>();
@@ -70,7 +74,7 @@ public class CombinatorService {
                 filtratedCombs.add(combination);
             }
         }
-        log.info("Final list of " + filtratedCombs.size() + " combinations.");
+        logMessage("Final list of " + filtratedCombs.size() + " combinations.");
 
         //iterate over combinations with element values and filter the list
         List<? extends BaseElement> listRLC = null;
@@ -80,29 +84,41 @@ public class CombinatorService {
             listRLC = resistorService.findAll();
         }
 
-        log.info("Generating permutations.");
+        logMessage("Generating permutations.");
         List<Double[]> permutations = permutationCombService.generatePermutations(listRLC, numItems, value);
-        log.info("Generated " + permutations.size() + " permutations.");
+        logMessage("Generated " + permutations.size() + " permutations.");
 
         ms = System.currentTimeMillis();
-        log.info("Started calculation of permutations per combinations.");
-        List<CombinationModel> modelList = CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType, permutations);
+        logMessage("Started calculation of permutations per combinations.");
+        List<CombinationModel> modelList = CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType,
+                permutations, allowedErrorPercentage, value);
         ms2 = System.currentTimeMillis();
-        log.info("Generated " + modelList.size() + " permutations in "  +TimeUtils.formatMs(ms2-ms) + ".");
+        logMessage("Generated " + modelList.size() + " permutations in "  +TimeUtils.formatMs(ms2-ms) + ".");
 
-        log.info("Started sorting combinations.");
+        logMessage("Started sorting combinations.");
         modelList.sort(new Comparator<CombinationModel>() {
             @Override
             public int compare(CombinationModel o1, CombinationModel o2) {
-                Double s1 = Math.abs(o1.getPermutation().getValue() - value);
-                Double s2 = Math.abs(o2.getPermutation().getValue() - value);
+                Double s1 = Math.abs(o1.getValue() - value);
+                Double s2 = Math.abs(o2.getValue() - value);
 
-                return (int) (s1-s2);
+                if (s1.equals(s2)) return 0;
+                if (s1>s2) return 1;
+                if (s1<s2) return -1;
+
+                return 0;
             }
         });
-        log.info("Ended sorting combinations.");
+        logMessage("Ended sorting combinations.");
 
         return modelList;
+    }
+
+    private void logMessage(String message) {
+        log.info(message);
+        PusherConfig.getInstance().trigger(PropertyConfig.getInstance().getProperty("pusher.combinator.channel"),
+                                            PropertyConfig.getInstance().getProperty("pusher.combinator.event"),
+                                                message);
     }
 
     /**
