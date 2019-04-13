@@ -42,21 +42,37 @@ public class CombinatorService {
     /**
      * Prepare combination circuit elements data per given entry parameters.
      * @param value
-     * @param numItems
+     * @param maxNumCombResults
      * @param elementType
      * @param allowedErrorPercentage
      * @return
      */
-    public List<CombinationModel> generateCombinationModels(Double value, Integer numItems, BaseElementEnum elementType, int allowedErrorPercentage) {
+    public List<CombinationModel> generateCombinationModels(Double value, Integer maxNumCombResults, BaseElementEnum elementType, int allowedErrorPercentage) {
+        int maxNumElements = PropertyConfig.getInstance().getIntProperty("app.combinator.maxelements.size");
+
+        List<CombinationModel> modelList = new java.util.ArrayList<>();
+        for (int i = 1; i <=maxNumElements ; i++) {
+            if (modelList.size() < maxNumCombResults){
+                generateCombinationModelsPerElemSize(value, maxNumCombResults, elementType, allowedErrorPercentage, modelList, i);
+            } else {
+                break;
+            }
+        }
+
+        return modelList.subList(0, modelList.size()>=maxNumCombResults?maxNumCombResults: modelList.size());
+    }
+
+    private void generateCombinationModelsPerElemSize(Double value, Integer maxNumCombResults, BaseElementEnum elementType, int allowedErrorPercentage,
+                                                      List<CombinationModel> modelList, int numElements) {
         List<CircuitElement> combinations = new ArrayList<>();
         CircuitElement root = new CircuitElement();
         long ms = System.currentTimeMillis();
-        logMessage("Started generating combinations.");
-        generateCombinations(numItems, 0, root, root, null, combinations);
+        logMessage("Started generating combinations.", numElements);
+        generateCombinations(numElements, 0, root, root, null, combinations);
         long ms2 = System.currentTimeMillis();
-        logMessage("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".");
+        logMessage("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".", numElements);
 
-        logMessage("Removing empty nodes from combinations.");
+        logMessage("Removing empty nodes from combinations.", numElements);
         //remove empty nodes
         for (CircuitElement combination  : combinations) {
             removeEmptyNodes(combination, true, false);
@@ -66,7 +82,7 @@ public class CombinatorService {
             removeEmptyNodes(combination, false, true);
         }
 
-        logMessage("Removing duplicate combinations.");
+        logMessage("Removing duplicate combinations.", numElements);
         //remove duplicate combinations
         List<CircuitElement> filtratedCombs = new ArrayList<>();
         Set<String> setComb = new HashSet<>();
@@ -77,7 +93,7 @@ public class CombinatorService {
                 filtratedCombs.add(combination);
             }
         }
-        logMessage("Final list of " + filtratedCombs.size() + " combinations.");
+        logMessage("Final list of " + filtratedCombs.size() + " combinations.", numElements);
 
         //iterate over combinations with element values and filter the list
         List<? extends BaseElement> listRLC = null;
@@ -87,18 +103,18 @@ public class CombinatorService {
             listRLC = resistorService.findAll();
         }
 
-        logMessage("Generating permutations.");
-        List<Double[]> permutations = permutationCombService.generatePermutations(listRLC, numItems, value);
-        logMessage("Generated " + permutations.size() + " permutations.");
+        logMessage("Generating permutations.", numElements);
+        List<Double[]> permutations = permutationCombService.generatePermutations(listRLC, numElements, value);
+        logMessage("Generated " + permutations.size() + " permutations.", numElements);
 
         ms = System.currentTimeMillis();
-        logMessage("Started calculation of permutations per combinations.");
-        List<CombinationModel> modelList = CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType,
-                permutations, allowedErrorPercentage, value);
+        logMessage("Started calculation of permutations per combinations.", numElements);
+        modelList.addAll(CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType,
+                permutations, allowedErrorPercentage, value));
         ms2 = System.currentTimeMillis();
-        logMessage("Generated " + modelList.size() + " permutations in "  +TimeUtils.formatMs(ms2-ms) + ".");
+        logMessage("Generated " + modelList.size() + " permutations in "  +TimeUtils.formatMs(ms2-ms) + ".", numElements);
 
-        logMessage("Started sorting combinations.");
+        logMessage("Started sorting combinations.", numElements);
         modelList.sort(new Comparator<CombinationModel>() {
             @Override
             public int compare(CombinationModel o1, CombinationModel o2) {
@@ -112,16 +128,15 @@ public class CombinatorService {
                 return 0;
             }
         });
-        logMessage("Ended sorting combinations.");
-
-        return modelList;
+        logMessage("Ended sorting combinations.", numElements);
     }
 
-    private void logMessage(String message) {
-        log.info(message);
+    private void logMessage(String message, int numElements) {
+        String msg = "NUM. OF ELEMS: " + numElements + "; " + message;
+        log.info(msg);
         PusherConfig.getInstance().trigger(PropertyConfig.getInstance().getProperty("pusher.combinator.channel"),
                                             PropertyConfig.getInstance().getProperty("pusher.combinator.event"),
-                                                message);
+                                                msg);
     }
 
     /**
