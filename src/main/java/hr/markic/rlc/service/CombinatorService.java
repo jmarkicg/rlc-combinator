@@ -1,6 +1,5 @@
 package hr.markic.rlc.service;
 
-import com.pusher.rest.Pusher;
 import hr.markic.rlc.config.PropertyConfig;
 import hr.markic.rlc.config.PusherConfig;
 import hr.markic.rlc.domain.BaseElement;
@@ -11,13 +10,17 @@ import hr.markic.rlc.model.CombinationModel;
 import hr.markic.rlc.rest.mapper.CombinationMapper;
 import hr.markic.rlc.util.ObjectUtils;
 import hr.markic.rlc.util.TimeUtils;
-import org.mariuszgromada.math.mxparser.Expression;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 @Service
 public class CombinatorService {
@@ -48,7 +51,7 @@ public class CombinatorService {
         List<CircuitElement> combinations = new ArrayList<>();
         CircuitElement root = new CircuitElement();
         long ms = System.currentTimeMillis();
-        logMessage("Started generating combinations");
+        logMessage("Started generating combinations.");
         generateCombinations(numItems, 0, root, root, null, combinations);
         long ms2 = System.currentTimeMillis();
         logMessage("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".");
