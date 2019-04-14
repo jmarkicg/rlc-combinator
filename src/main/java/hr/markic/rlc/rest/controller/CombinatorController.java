@@ -27,11 +27,14 @@ public class CombinatorController {
         dataBinder.registerCustomEditor(BaseElementEnum.class, new BaseElementEnumConverter());
     }
 
-    @RequestMapping(value = "/combinations/{value}/{maxNumCombResults}/{allowedErrorPercentage}/{elementType}", method = RequestMethod.GET)
-    public List<CombinationModel> generateCombinations(@PathVariable Double value, @PathVariable Integer maxNumCombResults,
+    @RequestMapping(value = "/combinations/{value}/{minNumCombResults}/{maxNumCombResults}/{allowedErrorPercentage}/{elementType}",
+                    method = RequestMethod.GET)
+    public List<CombinationModel> generateCombinations(@PathVariable Double value,
+                                                       @PathVariable Integer minNumCombResults,
+                                                       @PathVariable Integer maxNumCombResults,
                                                        @PathVariable Integer allowedErrorPercentage,
                                                        @PathVariable BaseElementEnum elementType){
-        return combinatorService.generateCombinationModels(value, maxNumCombResults, elementType, allowedErrorPercentage);
+        return combinatorService.generateCombinationModels(value, minNumCombResults, maxNumCombResults, elementType, allowedErrorPercentage);
        }
 
 }

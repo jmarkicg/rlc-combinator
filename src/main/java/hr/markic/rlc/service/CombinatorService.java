@@ -42,27 +42,27 @@ public class CombinatorService {
     /**
      * Prepare combination circuit elements data per given entry parameters.
      * @param value
+     * @param minNumCombResults
      * @param maxNumCombResults
      * @param elementType
      * @param allowedErrorPercentage
      * @return
      */
-    public List<CombinationModel> generateCombinationModels(Double value, Integer maxNumCombResults, BaseElementEnum elementType, int allowedErrorPercentage) {
+    public List<CombinationModel> generateCombinationModels(Double value, Integer minNumCombResults, Integer maxNumCombResults, BaseElementEnum elementType, int allowedErrorPercentage) {
         int maxNumElements = PropertyConfig.getInstance().getIntProperty("app.combinator.maxelements.size");
 
         List<CombinationModel> modelList = new java.util.ArrayList<>();
         for (int i = 1; i <=maxNumElements ; i++) {
-            if (modelList.size() < maxNumCombResults){
-                generateCombinationModelsPerElemSize(value, maxNumCombResults, elementType, allowedErrorPercentage, modelList, i);
-            } else {
+            if (modelList != null && modelList.size() >= minNumCombResults){
                 break;
             }
+            generateCombinationModelsPerElemSize(value, elementType, allowedErrorPercentage, modelList, i);
         }
 
         return modelList.subList(0, modelList.size()>=maxNumCombResults?maxNumCombResults: modelList.size());
     }
 
-    private void generateCombinationModelsPerElemSize(Double value, Integer maxNumCombResults, BaseElementEnum elementType, int allowedErrorPercentage,
+    private void generateCombinationModelsPerElemSize(Double value, BaseElementEnum elementType, int allowedErrorPercentage,
                                                       List<CombinationModel> modelList, int numElements) {
         List<CircuitElement> combinations = new ArrayList<>();
         CircuitElement root = new CircuitElement();
