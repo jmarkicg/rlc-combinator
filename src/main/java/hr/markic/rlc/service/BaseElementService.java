@@ -2,7 +2,6 @@ package hr.markic.rlc.service;
 
 import hr.markic.rlc.domain.BaseElement;
 import hr.markic.rlc.repository.BaseElementRepository;
-import org.bson.types.ObjectId;
 
 import javax.transaction.Transactional;
 import java.util.List;
@@ -20,12 +19,12 @@ public class BaseElementService<T extends BaseElement> {
         elementRepository.delete(element);
     }
 
-    public void deleteById(ObjectId _id){
-        elementRepository.deleteById(_id);
+    public void deleteById(Long id){
+        elementRepository.deleteById(id);
     }
 
-    public T findBy_id(ObjectId id){
-        return (T) elementRepository.findBy_id(id);
+    public T findById(Long id){
+        return (T) elementRepository.getOne(id);
     }
 
     public List<T> findAll(){

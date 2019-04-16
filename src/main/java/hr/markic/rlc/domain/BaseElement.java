@@ -1,34 +1,38 @@
 package hr.markic.rlc.domain;
 
-import org.bson.types.ObjectId;
-
-import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 
 /**
  * Common base domain element used to store the data related to RLC elements.
  */
-public class BaseElement {
-    @Id
-    public ObjectId _id;
+@MappedSuperclass
+public abstract class BaseElement {
 
+    @Column
     public String type;
+
+    @Column
     public Double value;
+
+    @Column
     public String description;
+
+    @Column
     public Integer numItems;
 
     // Constructors
     public BaseElement() {}
 
-    public BaseElement(ObjectId _id, String type, Double value, String description, Integer numItems) {
-        this._id = _id;
+    public BaseElement(String type, Double value, String description, Integer numItems) {
         this.type = type;
         this.description = description;
         this.numItems = numItems;
     }
 
-    // ObjectId needs to be converted to string
-    public String get_id() { return _id.toHexString(); }
-    public void set_id(ObjectId _id) { this._id = _id; }
+    public abstract Long getId();
+
+    public abstract void setId(Long id);
 
     public String getType() {
         return type;

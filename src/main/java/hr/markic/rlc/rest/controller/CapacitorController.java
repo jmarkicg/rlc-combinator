@@ -2,9 +2,14 @@ package hr.markic.rlc.rest.controller;
 
 import hr.markic.rlc.domain.Capacitor;
 import hr.markic.rlc.service.CapacitorService;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -32,7 +37,7 @@ public class CapacitorController {
     }
 
     @DeleteMapping(value = "/delete/{id}")
-    public void delete(@PathVariable String id){
-        capacitorService.deleteById(new ObjectId(id));
+    public void delete(@PathVariable Long id){
+        capacitorService.deleteById(id);
     }
 }
