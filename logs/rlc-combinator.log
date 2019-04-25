@@ -1,4 +1,4 @@
-2019-04-18 00:38:30,113 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-22] Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-18 00:38:30,161 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-22] Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-04-18 00:38:30,378 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-1 - Shutdown initiated...
-2019-04-18 00:38:30,402 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-1 - Shutdown completed.
+2019-04-26 00:08:36,111 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-22] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-26 00:08:36,150 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-22] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-26 00:08:36,692 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-1 - Shutdown initiated...
+2019-04-26 00:08:36,713 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-1 - Shutdown completed.
