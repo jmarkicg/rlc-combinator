@@ -2,9 +2,6 @@ package hr.markic.rlc.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import java.util.ResourceBundle;
@@ -39,6 +36,15 @@ public class PropertyConfig {
     public Integer getIntProperty(String property){
         try{
            return Integer.valueOf(bundle.getString(property));
+        } catch (Exception e){
+            log.error("Failed to retrieve the Integer value for propety: {}.", property);
+        }
+        return null;
+    }
+
+    public String[] getArrayOfStrings(String property){
+        try{
+            return bundle.getString(property).split(",");
         } catch (Exception e){
             log.error("Failed to retrieve the Integer value for propety: {}.", property);
         }
