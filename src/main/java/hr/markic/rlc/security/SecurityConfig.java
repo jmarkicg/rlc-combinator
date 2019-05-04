@@ -5,7 +5,6 @@ import hr.markic.rlc.security.jwt.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -29,16 +28,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         //@formatter:off
-         http
+         http   .cors()
+                .and()
                 .httpBasic().disable()
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.OPTIONS,"/api/*").permitAll()//
-                .antMatchers("/auth/login").permitAll()
-                .antMatchers(HttpMethod.GET,  "/api/*").hasRole("USER")
-                .anyRequest().authenticated()
+                    .antMatchers("/auth/*").permitAll()
+                    .antMatchers("/api/*").hasRole("USER")
+                    .anyRequest().authenticated()
                 .and()
                 .apply(new JwtConfigurer(jwtTokenProvider));
         //@formatter:on

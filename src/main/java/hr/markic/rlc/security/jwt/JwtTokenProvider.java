@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
 import java.util.Base64;
 import java.util.Date;
 import java.util.List;
@@ -25,8 +26,11 @@ public class JwtTokenProvider {
     @Value("${security.jwt.token.secret-key}")
     private String secretKey;
 
-    @Value("${security.jwt.token.expire-length}")
-    private long validityInMilliseconds;
+    @Value("${security.jwt.accessToken.expire-length}")
+    private long validityAccessMs;
+
+    @Value("${security.jwt.refreshToken.expire-length}")
+    private long validitiyRefresh;
 
     @Autowired
     private CustomUserDetailsService userDetailsService;
@@ -36,13 +40,13 @@ public class JwtTokenProvider {
         secretKey = Base64.getEncoder().encodeToString(secretKey.getBytes());
     }
 
-    public String createToken(String username, List<String> roles) {
+    public String createAccessToken(String username, List<String> roles) {
 
         Claims claims = Jwts.claims().setSubject(username);
         claims.put("roles", roles);
 
         Date now = new Date();
-        Date validity = new Date(now.getTime() + validityInMilliseconds);
+        Date validity = new Date(now.getTime() + validityAccessMs);
 
         return Jwts.builder()//
             .setClaims(claims)//
@@ -50,6 +54,22 @@ public class JwtTokenProvider {
             .setExpiration(validity)//
             .signWith(SignatureAlgorithm.HS256, secretKey)//
             .compact();
+    }
+
+    public String createRefreshToken(String username) {
+
+        Claims claims = Jwts.claims().setSubject(username);
+        claims.put("scopes", Arrays.asList("ROLE_REFRESH_TOKEN"));
+
+        Date now = new Date();
+        Date validity = new Date(now.getTime() + validitiyRefresh);
+
+        return Jwts.builder()//
+                .setClaims(claims)//
+                .setIssuedAt(now)//
+                .setExpiration(validity)//
+                .signWith(SignatureAlgorithm.HS256, secretKey)//
+                .compact();
     }
 
     public Authentication getAuthentication(String token) {
@@ -69,14 +89,13 @@ public class JwtTokenProvider {
         return null;
     }
 
-    public boolean validateToken(String token) {
+    public boolean validateToken(String token) throws InvalidJwtAuthenticationException {
         try {
             Jws<Claims> claims = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
 
             if (claims.getBody().getExpiration().before(new Date())) {
                 return false;
             }
-
             return true;
         } catch (JwtException | IllegalArgumentException e) {
             throw new InvalidJwtAuthenticationException("Expired or invalid JWT token");

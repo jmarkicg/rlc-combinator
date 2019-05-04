@@ -7,7 +7,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AuthModel {
-    String username;
     @JsonProperty("access_token")
     String accessToken;
     @JsonProperty("refresh_token")
