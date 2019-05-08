@@ -1,6 +1,9 @@
 package hr.markic.rlc.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Column;
+import javax.persistence.ManyToOne;
 import javax.persistence.MappedSuperclass;
 
 /**
@@ -21,13 +24,19 @@ public abstract class BaseElement {
     @Column
     public Integer numItems;
 
+    @JsonIgnore
+    @ManyToOne
+    public User owner;
+
     // Constructors
     public BaseElement() {}
 
-    public BaseElement(String type, Double value, String description, Integer numItems) {
+    public BaseElement(User owner, String type, Double value, String description, Integer numItems) {
+        this.owner = owner;
         this.type = type;
         this.description = description;
         this.numItems = numItems;
+        this.value = value;
     }
 
     public abstract Long getId();
@@ -64,5 +73,13 @@ public abstract class BaseElement {
 
     public void setNumItems(Integer numItems) {
         this.numItems = numItems;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public void setOwner(User owner) {
+        this.owner = owner;
     }
 }

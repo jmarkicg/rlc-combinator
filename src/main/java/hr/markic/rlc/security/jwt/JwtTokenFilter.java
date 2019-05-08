@@ -27,7 +27,6 @@ public class JwtTokenFilter extends GenericFilterBean {
         HttpServletResponse response = (HttpServletResponse) res;
 
         try {
-            System.out.println(request.getRequestURI());
             if (!request.getRequestURI().contains("auth/")){
                 String token = jwtTokenProvider.resolveToken((HttpServletRequest) req);
                 if (token != null && jwtTokenProvider.validateToken(token)) {

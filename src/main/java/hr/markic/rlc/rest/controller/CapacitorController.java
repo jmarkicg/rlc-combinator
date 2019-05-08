@@ -1,9 +1,8 @@
 package hr.markic.rlc.rest.controller;
 
 import hr.markic.rlc.domain.Capacitor;
+import hr.markic.rlc.service.AuthService;
 import hr.markic.rlc.service.CapacitorService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,14 +19,17 @@ public class CapacitorController {
 
     CapacitorService capacitorService;
 
+    AuthService authService;
+
     @Autowired
-    public CapacitorController(CapacitorService service){
+    public CapacitorController(CapacitorService service, AuthService authService){
+        this.authService = authService;
         this.capacitorService = service;
     }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public List<Capacitor> findAll(){
-        List<Capacitor> list = capacitorService.findAll();
+        List<Capacitor> list = capacitorService.findAll(authService.getCurrentUser());
         return list;
     }
 

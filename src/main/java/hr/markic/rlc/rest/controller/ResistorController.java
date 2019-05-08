@@ -1,6 +1,7 @@
 package hr.markic.rlc.rest.controller;
 
 import hr.markic.rlc.domain.Resistor;
+import hr.markic.rlc.service.AuthService;
 import hr.markic.rlc.service.ResistorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -18,14 +19,17 @@ public class ResistorController {
 
     ResistorService resistorService;
 
+    AuthService authService;
+
     @Autowired
-    public ResistorController(ResistorService service){
+    public ResistorController(ResistorService service, AuthService authService){
+        this.authService = authService;
         this.resistorService = service;
     }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public List<Resistor> findAll(){
-        List<Resistor> list = resistorService.findAll();
+        List<Resistor> list = resistorService.findAll(authService.getCurrentUser());
         return list;
     }
 

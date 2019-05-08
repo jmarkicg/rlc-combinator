@@ -98,9 +98,9 @@ public class CombinatorService {
         //iterate over combinations with element values and filter the list
         List<? extends BaseElement> listRLC = null;
         if (elementType.equals(BaseElementEnum.CAPACITOR)){
-            listRLC = capacitorService.findAll();
+            listRLC = capacitorService.findAll(null);
         } else if (elementType.equals(BaseElementEnum.RESISTOR)){
-            listRLC = resistorService.findAll();
+            listRLC = resistorService.findAll(null);
         }
 
         logMessage("Generating permutations.", numElements);
