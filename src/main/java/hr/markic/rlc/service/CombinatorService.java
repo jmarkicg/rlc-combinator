@@ -28,15 +28,17 @@ public class CombinatorService {
     CapacitorService capacitorService;
     ResistorService resistorService;
     PermutationCombService permutationCombService;
+    AuthService authService;
 
     private static final Logger log = LoggerFactory.getLogger(CombinatorService.class);
 
     @Autowired
     public CombinatorService(CapacitorService capacitorService, ResistorService resistorService,
-                             PermutationCombService permutationCombService){
+                             PermutationCombService permutationCombService, AuthService authService){
         this.capacitorService = capacitorService;
         this.resistorService = resistorService;
         this.permutationCombService = permutationCombService;
+        this.authService = authService;
     }
 
     /**
@@ -98,9 +100,9 @@ public class CombinatorService {
         //iterate over combinations with element values and filter the list
         List<? extends BaseElement> listRLC = null;
         if (elementType.equals(BaseElementEnum.CAPACITOR)){
-            listRLC = capacitorService.findAll(null);
+            listRLC = capacitorService.findAll(authService.getCurrentUser());
         } else if (elementType.equals(BaseElementEnum.RESISTOR)){
-            listRLC = resistorService.findAll(null);
+            listRLC = resistorService.findAll(authService.getCurrentUser());
         }
 
         logMessage("Generating permutations.", numElements);
