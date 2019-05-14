@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>hr.markic.rlc</groupId>
 	<artifactId>rlc-combinator</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>rlc-combinator</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging> jar </packaging>
@@ -98,6 +98,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<useSystemClassLoader>false</useSystemClassLoader>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

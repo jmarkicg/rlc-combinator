@@ -1,72 +1,431 @@
-2019-05-10 00:17:57,060 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplicationTests on hrgovici with PID 15670 (started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
-2019-05-10 00:17:57,068 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-05-10 00:17:57,072 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-05-10 00:17:59,713 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-10 00:17:59,889 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 149ms. Found 3 repository interfaces.
-2019-05-10 00:18:00,767 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a083213] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-10 00:18:01,242 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2019-05-10 00:18:02,527 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2019-05-10 00:18:02,831 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+2019-05-15 00:00:21,900 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Started generating combinations.
+2019-05-15 00:00:22,291 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Generated 2 combinations in 00.390 seconds.
+2019-05-15 00:00:22,379 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Removing empty nodes from combinations.
+2019-05-15 00:00:22,459 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Removing duplicate combinations.
+2019-05-15 00:00:22,539 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Final list of 2 combinations.
+2019-05-15 00:00:22,787 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Generating permutations.
+2019-05-15 00:00:22,880 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Generated 0 permutations.
+2019-05-15 00:00:22,968 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Started calculation of permutations per combinations.
+2019-05-15 00:00:23,053 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Generated 0 permutations in 00.085 seconds.
+2019-05-15 00:00:23,136 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Started sorting combinations.
+2019-05-15 00:00:23,219 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Ended sorting combinations.
+2019-05-15 00:00:23,299 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Started generating combinations.
+2019-05-15 00:00:23,383 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Generated 6 combinations in 00.084 seconds.
+2019-05-15 00:00:23,469 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Removing empty nodes from combinations.
+2019-05-15 00:00:23,550 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Removing duplicate combinations.
+2019-05-15 00:00:23,641 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Final list of 2 combinations.
+2019-05-15 00:00:23,868 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Generating permutations.
+2019-05-15 00:00:23,962 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Generated 0 permutations.
+2019-05-15 00:00:24,051 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Started calculation of permutations per combinations.
+2019-05-15 00:00:24,140 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Generated 0 permutations in 00.088 seconds.
+2019-05-15 00:00:24,219 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Started sorting combinations.
+2019-05-15 00:00:24,300 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 2; Ended sorting combinations.
+2019-05-15 00:00:24,378 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Started generating combinations.
+2019-05-15 00:00:24,505 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Generated 22 combinations in 00.127 seconds.
+2019-05-15 00:00:24,589 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Removing empty nodes from combinations.
+2019-05-15 00:00:24,679 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Removing duplicate combinations.
+2019-05-15 00:00:24,760 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Final list of 4 combinations.
+2019-05-15 00:00:25,025 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Generating permutations.
+2019-05-15 00:00:25,119 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Generated 0 permutations.
+2019-05-15 00:00:25,210 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Started calculation of permutations per combinations.
+2019-05-15 00:00:25,299 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Generated 0 permutations in 00.089 seconds.
+2019-05-15 00:00:25,382 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Started sorting combinations.
+2019-05-15 00:00:25,459 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 3; Ended sorting combinations.
+2019-05-15 00:00:25,538 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Started generating combinations.
+2019-05-15 00:00:25,673 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Generated 90 combinations in 00.135 seconds.
+2019-05-15 00:00:25,749 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Removing empty nodes from combinations.
+2019-05-15 00:00:25,830 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Removing duplicate combinations.
+2019-05-15 00:00:25,915 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Final list of 10 combinations.
+2019-05-15 00:00:26,155 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Generating permutations.
+2019-05-15 00:00:26,242 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Generated 0 permutations.
+2019-05-15 00:00:26,329 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Started calculation of permutations per combinations.
+2019-05-15 00:00:26,421 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Generated 0 permutations in 00.091 seconds.
+2019-05-15 00:00:26,499 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Started sorting combinations.
+2019-05-15 00:00:26,597 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 4; Ended sorting combinations.
+2019-05-15 00:00:26,678 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Started generating combinations.
+2019-05-15 00:00:26,909 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Generated 394 combinations in 00.231 seconds.
+2019-05-15 00:00:26,998 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Removing empty nodes from combinations.
+2019-05-15 00:00:27,085 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Removing duplicate combinations.
+2019-05-15 00:00:27,184 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Final list of 26 combinations.
+2019-05-15 00:00:27,430 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Generating permutations.
+2019-05-15 00:00:27,512 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Generated 0 permutations.
+2019-05-15 00:00:27,598 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Started calculation of permutations per combinations.
+2019-05-15 00:00:27,680 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Generated 0 permutations in 00.082 seconds.
+2019-05-15 00:00:27,769 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Started sorting combinations.
+2019-05-15 00:00:27,853 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 5; Ended sorting combinations.
+2019-05-15 00:00:27,941 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Started generating combinations.
+2019-05-15 00:00:28,791 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Generated 1806 combinations in 00.850 seconds.
+2019-05-15 00:00:28,879 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Removing empty nodes from combinations.
+2019-05-15 00:00:28,978 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Removing duplicate combinations.
+2019-05-15 00:00:29,096 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Final list of 70 combinations.
+2019-05-15 00:00:29,324 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Generating permutations.
+2019-05-15 00:00:29,408 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Generated 0 permutations.
+2019-05-15 00:00:29,491 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Started calculation of permutations per combinations.
+2019-05-15 00:00:29,590 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Generated 0 permutations in 00.095 seconds.
+2019-05-15 00:00:29,671 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Started sorting combinations.
+2019-05-15 00:00:29,760 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 6; Ended sorting combinations.
+2019-05-15 00:00:29,848 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Started generating combinations.
+2019-05-15 00:00:33,973 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Generated 8558 combinations in 04.124 seconds.
+2019-05-15 00:00:34,093 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Removing empty nodes from combinations.
+2019-05-15 00:00:34,241 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Removing duplicate combinations.
+2019-05-15 00:00:34,414 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Final list of 194 combinations.
+2019-05-15 00:00:34,708 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Generating permutations.
+2019-05-15 00:00:34,792 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Generated 0 permutations.
+2019-05-15 00:00:34,880 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Started calculation of permutations per combinations.
+2019-05-15 00:00:34,977 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Generated 0 permutations in 00.097 seconds.
+2019-05-15 00:00:35,051 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Started sorting combinations.
+2019-05-15 00:00:35,139 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 7; Ended sorting combinations.
+2019-05-15 00:00:59,457 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Started generating combinations.
+2019-05-15 00:00:59,544 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Generated 2 combinations in 00.087 seconds.
+2019-05-15 00:00:59,640 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Removing empty nodes from combinations.
+2019-05-15 00:00:59,729 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Removing duplicate combinations.
+2019-05-15 00:00:59,808 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Final list of 2 combinations.
+2019-05-15 00:01:00,096 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Generating permutations.
+2019-05-15 00:01:00,179 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Generated 0 permutations.
+2019-05-15 00:01:00,260 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Started calculation of permutations per combinations.
+2019-05-15 00:01:00,339 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Generated 0 permutations in 00.079 seconds.
+2019-05-15 00:01:00,418 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Started sorting combinations.
+2019-05-15 00:01:00,499 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 1; Ended sorting combinations.
+2019-05-15 00:01:00,579 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Started generating combinations.
+2019-05-15 00:01:00,672 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Generated 6 combinations in 00.093 seconds.
+2019-05-15 00:01:00,748 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Removing empty nodes from combinations.
+2019-05-15 00:01:00,829 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Removing duplicate combinations.
+2019-05-15 00:01:00,919 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Final list of 2 combinations.
+2019-05-15 00:01:01,138 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Generating permutations.
+2019-05-15 00:01:01,224 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Generated 0 permutations.
+2019-05-15 00:01:01,310 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Started calculation of permutations per combinations.
+2019-05-15 00:01:01,388 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Generated 0 permutations in 00.078 seconds.
+2019-05-15 00:01:01,469 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Started sorting combinations.
+2019-05-15 00:01:01,557 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 2; Ended sorting combinations.
+2019-05-15 00:01:01,653 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Started generating combinations.
+2019-05-15 00:01:01,755 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Generated 22 combinations in 00.102 seconds.
+2019-05-15 00:01:01,859 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Removing empty nodes from combinations.
+2019-05-15 00:01:01,939 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Removing duplicate combinations.
+2019-05-15 00:01:02,029 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Final list of 4 combinations.
+2019-05-15 00:01:02,295 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Generating permutations.
+2019-05-15 00:01:02,402 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Generated 0 permutations.
+2019-05-15 00:01:02,493 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Started calculation of permutations per combinations.
+2019-05-15 00:01:02,578 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Generated 0 permutations in 00.085 seconds.
+2019-05-15 00:01:02,659 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Started sorting combinations.
+2019-05-15 00:01:02,739 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 3; Ended sorting combinations.
+2019-05-15 00:01:02,837 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Started generating combinations.
+2019-05-15 00:01:02,963 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Generated 90 combinations in 00.126 seconds.
+2019-05-15 00:01:03,054 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Removing empty nodes from combinations.
+2019-05-15 00:01:03,172 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Removing duplicate combinations.
+2019-05-15 00:01:03,285 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Final list of 10 combinations.
+2019-05-15 00:01:03,537 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Generating permutations.
+2019-05-15 00:01:03,630 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Generated 0 permutations.
+2019-05-15 00:01:03,719 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Started calculation of permutations per combinations.
+2019-05-15 00:01:03,809 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Generated 0 permutations in 00.090 seconds.
+2019-05-15 00:01:03,887 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Started sorting combinations.
+2019-05-15 00:01:03,968 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 4; Ended sorting combinations.
+2019-05-15 00:01:04,049 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Started generating combinations.
+2019-05-15 00:01:04,387 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Generated 394 combinations in 00.338 seconds.
+2019-05-15 00:01:04,479 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Removing empty nodes from combinations.
+2019-05-15 00:01:04,563 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Removing duplicate combinations.
+2019-05-15 00:01:04,642 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Final list of 26 combinations.
+2019-05-15 00:01:04,877 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Generating permutations.
+2019-05-15 00:01:04,962 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Generated 0 permutations.
+2019-05-15 00:01:05,043 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Started calculation of permutations per combinations.
+2019-05-15 00:01:05,140 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Generated 0 permutations in 00.097 seconds.
+2019-05-15 00:01:05,230 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Started sorting combinations.
+2019-05-15 00:01:05,308 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 5; Ended sorting combinations.
+2019-05-15 00:01:05,388 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Started generating combinations.
+2019-05-15 00:01:06,875 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Generated 1806 combinations in 01.487 seconds.
+2019-05-15 00:01:06,969 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Removing empty nodes from combinations.
+2019-05-15 00:01:07,074 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Removing duplicate combinations.
+2019-05-15 00:01:07,179 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Final list of 70 combinations.
+2019-05-15 00:01:07,467 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Generating permutations.
+2019-05-15 00:01:07,560 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Generated 0 permutations.
+2019-05-15 00:01:07,648 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Started calculation of permutations per combinations.
+2019-05-15 00:01:07,733 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Generated 0 permutations in 00.085 seconds.
+2019-05-15 00:01:07,818 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Started sorting combinations.
+2019-05-15 00:01:07,898 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 6; Ended sorting combinations.
+2019-05-15 00:01:07,979 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Started generating combinations.
+2019-05-15 00:01:13,203 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Generated 8558 combinations in 05.224 seconds.
+2019-05-15 00:01:13,289 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Removing empty nodes from combinations.
+2019-05-15 00:01:13,447 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Removing duplicate combinations.
+2019-05-15 00:01:13,640 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Final list of 194 combinations.
+2019-05-15 00:01:13,887 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Generating permutations.
+2019-05-15 00:01:13,972 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Generated 0 permutations.
+2019-05-15 00:01:14,058 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Started calculation of permutations per combinations.
+2019-05-15 00:01:14,158 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Generated 0 permutations in 00.100 seconds.
+2019-05-15 00:01:14,248 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Started sorting combinations.
+2019-05-15 00:01:14,330 INFO hr.markic.rlc.service.CombinatorService [Thread-31] NUM. OF ELEMS: 7; Ended sorting combinations.
+2019-05-15 00:03:03,019 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Started generating combinations.
+2019-05-15 00:03:03,426 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Generated 2 combinations in 00.407 seconds.
+2019-05-15 00:03:03,504 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Removing empty nodes from combinations.
+2019-05-15 00:03:03,584 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Removing duplicate combinations.
+2019-05-15 00:03:03,664 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Final list of 2 combinations.
+2019-05-15 00:03:03,897 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Generating permutations.
+2019-05-15 00:03:03,980 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Generated 0 permutations.
+2019-05-15 00:03:04,064 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Started calculation of permutations per combinations.
+2019-05-15 00:03:04,144 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Generated 0 permutations in 00.080 seconds.
+2019-05-15 00:03:04,224 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Started sorting combinations.
+2019-05-15 00:03:04,302 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 1; Ended sorting combinations.
+2019-05-15 00:03:04,385 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Started generating combinations.
+2019-05-15 00:03:04,480 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Generated 6 combinations in 00.095 seconds.
+2019-05-15 00:03:04,554 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Removing empty nodes from combinations.
+2019-05-15 00:03:04,634 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Removing duplicate combinations.
+2019-05-15 00:03:04,715 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Final list of 2 combinations.
+2019-05-15 00:03:04,935 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Generating permutations.
+2019-05-15 00:03:05,018 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Generated 0 permutations.
+2019-05-15 00:03:05,106 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Started calculation of permutations per combinations.
+2019-05-15 00:03:05,186 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Generated 0 permutations in 00.080 seconds.
+2019-05-15 00:03:05,266 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Started sorting combinations.
+2019-05-15 00:03:05,345 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 2; Ended sorting combinations.
+2019-05-15 00:03:05,425 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Started generating combinations.
+2019-05-15 00:03:05,514 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Generated 22 combinations in 00.089 seconds.
+2019-05-15 00:03:05,594 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Removing empty nodes from combinations.
+2019-05-15 00:03:05,674 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Removing duplicate combinations.
+2019-05-15 00:03:05,754 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Final list of 4 combinations.
+2019-05-15 00:03:05,996 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Generating permutations.
+2019-05-15 00:03:06,078 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Generated 0 permutations.
+2019-05-15 00:03:06,164 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Started calculation of permutations per combinations.
+2019-05-15 00:03:06,254 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Generated 0 permutations in 00.090 seconds.
+2019-05-15 00:03:06,335 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Started sorting combinations.
+2019-05-15 00:03:06,414 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 3; Ended sorting combinations.
+2019-05-15 00:03:06,495 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Started generating combinations.
+2019-05-15 00:03:06,621 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Generated 90 combinations in 00.126 seconds.
+2019-05-15 00:03:06,696 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Removing empty nodes from combinations.
+2019-05-15 00:03:06,776 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Removing duplicate combinations.
+2019-05-15 00:03:06,854 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Final list of 10 combinations.
+2019-05-15 00:03:07,096 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Generating permutations.
+2019-05-15 00:03:07,178 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Generated 0 permutations.
+2019-05-15 00:03:07,263 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Started calculation of permutations per combinations.
+2019-05-15 00:03:07,345 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Generated 0 permutations in 00.082 seconds.
+2019-05-15 00:03:07,427 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Started sorting combinations.
+2019-05-15 00:03:07,515 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 4; Ended sorting combinations.
+2019-05-15 00:03:07,594 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Started generating combinations.
+2019-05-15 00:03:07,890 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Generated 394 combinations in 00.296 seconds.
+2019-05-15 00:03:07,975 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Removing empty nodes from combinations.
+2019-05-15 00:03:08,060 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Removing duplicate combinations.
+2019-05-15 00:03:08,140 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Final list of 26 combinations.
+2019-05-15 00:03:08,375 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Generating permutations.
+2019-05-15 00:03:08,456 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Generated 0 permutations.
+2019-05-15 00:03:08,539 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Started calculation of permutations per combinations.
+2019-05-15 00:03:08,629 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Generated 0 permutations in 00.090 seconds.
+2019-05-15 00:03:08,704 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Started sorting combinations.
+2019-05-15 00:03:08,785 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 5; Ended sorting combinations.
+2019-05-15 00:03:08,864 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Started generating combinations.
+2019-05-15 00:03:10,024 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Generated 1806 combinations in 01.160 seconds.
+2019-05-15 00:03:10,114 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Removing empty nodes from combinations.
+2019-05-15 00:03:10,211 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Removing duplicate combinations.
+2019-05-15 00:03:10,307 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Final list of 70 combinations.
+2019-05-15 00:03:10,546 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Generating permutations.
+2019-05-15 00:03:10,625 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Generated 0 permutations.
+2019-05-15 00:03:10,703 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Started calculation of permutations per combinations.
+2019-05-15 00:03:10,790 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Generated 0 permutations in 00.087 seconds.
+2019-05-15 00:03:10,867 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Started sorting combinations.
+2019-05-15 00:03:10,955 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 6; Ended sorting combinations.
+2019-05-15 00:03:11,034 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Started generating combinations.
+2019-05-15 00:03:16,288 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Generated 8558 combinations in 05.254 seconds.
+2019-05-15 00:03:16,375 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Removing empty nodes from combinations.
+2019-05-15 00:03:16,570 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Removing duplicate combinations.
+2019-05-15 00:03:17,036 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Final list of 194 combinations.
+2019-05-15 00:03:17,287 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Generating permutations.
+2019-05-15 00:03:17,369 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Generated 0 permutations.
+2019-05-15 00:03:17,448 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Started calculation of permutations per combinations.
+2019-05-15 00:03:17,553 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Generated 0 permutations in 00.105 seconds.
+2019-05-15 00:03:17,627 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Started sorting combinations.
+2019-05-15 00:03:17,714 INFO hr.markic.rlc.service.CombinatorService [Thread-32] NUM. OF ELEMS: 7; Ended sorting combinations.
+2019-05-15 00:05:11,133 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-5000-exec-6] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 00:05:11,256 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-5000-exec-6] Finished Spring Data repository scanning in 77ms. Found 0 repository interfaces.
+2019-05-15 00:05:13,120 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Started generating combinations.
+2019-05-15 00:05:13,905 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Generated 2 combinations in 00.784 seconds.
+2019-05-15 00:05:13,998 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Removing empty nodes from combinations.
+2019-05-15 00:05:14,076 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Removing duplicate combinations.
+2019-05-15 00:05:14,157 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Final list of 2 combinations.
+2019-05-15 00:05:14,396 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Generating permutations.
+2019-05-15 00:05:14,481 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Generated 0 permutations.
+2019-05-15 00:05:14,567 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Started calculation of permutations per combinations.
+2019-05-15 00:05:14,658 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Generated 0 permutations in 00.091 seconds.
+2019-05-15 00:05:14,738 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Started sorting combinations.
+2019-05-15 00:05:14,846 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 1; Ended sorting combinations.
+2019-05-15 00:05:14,956 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Started generating combinations.
+2019-05-15 00:05:15,040 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Generated 6 combinations in 00.084 seconds.
+2019-05-15 00:05:15,119 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Removing empty nodes from combinations.
+2019-05-15 00:05:15,197 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Removing duplicate combinations.
+2019-05-15 00:05:15,279 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Final list of 2 combinations.
+2019-05-15 00:05:15,494 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Generating permutations.
+2019-05-15 00:05:15,577 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Generated 0 permutations.
+2019-05-15 00:05:15,657 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Started calculation of permutations per combinations.
+2019-05-15 00:05:15,737 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Generated 0 permutations in 00.080 seconds.
+2019-05-15 00:05:15,817 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Started sorting combinations.
+2019-05-15 00:05:15,896 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 2; Ended sorting combinations.
+2019-05-15 00:05:15,976 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Started generating combinations.
+2019-05-15 00:05:16,090 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Generated 22 combinations in 00.113 seconds.
+2019-05-15 00:05:16,191 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Removing empty nodes from combinations.
+2019-05-15 00:05:16,277 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Removing duplicate combinations.
+2019-05-15 00:05:16,359 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Final list of 4 combinations.
+2019-05-15 00:05:16,608 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Generating permutations.
+2019-05-15 00:05:16,699 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Generated 0 permutations.
+2019-05-15 00:05:16,788 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Started calculation of permutations per combinations.
+2019-05-15 00:05:16,867 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Generated 0 permutations in 00.079 seconds.
+2019-05-15 00:05:16,958 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Started sorting combinations.
+2019-05-15 00:05:17,036 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 3; Ended sorting combinations.
+2019-05-15 00:05:17,117 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Started generating combinations.
+2019-05-15 00:05:17,290 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Generated 90 combinations in 00.173 seconds.
+2019-05-15 00:05:17,376 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Removing empty nodes from combinations.
+2019-05-15 00:05:17,468 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Removing duplicate combinations.
+2019-05-15 00:05:17,546 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Final list of 10 combinations.
+2019-05-15 00:05:17,783 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Generating permutations.
+2019-05-15 00:05:17,858 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Generated 0 permutations.
+2019-05-15 00:05:17,946 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Started calculation of permutations per combinations.
+2019-05-15 00:05:18,027 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Generated 0 permutations in 00.081 seconds.
+2019-05-15 00:05:18,106 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Started sorting combinations.
+2019-05-15 00:05:18,186 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 4; Ended sorting combinations.
+2019-05-15 00:05:18,266 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Started generating combinations.
+2019-05-15 00:05:18,750 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Generated 394 combinations in 00.484 seconds.
+2019-05-15 00:05:18,846 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Removing empty nodes from combinations.
+2019-05-15 00:05:18,931 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Removing duplicate combinations.
+2019-05-15 00:05:19,026 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Final list of 26 combinations.
+2019-05-15 00:05:19,278 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Generating permutations.
+2019-05-15 00:05:19,367 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Generated 0 permutations.
+2019-05-15 00:05:19,447 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Started calculation of permutations per combinations.
+2019-05-15 00:05:19,528 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Generated 0 permutations in 00.081 seconds.
+2019-05-15 00:05:19,607 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Started sorting combinations.
+2019-05-15 00:05:19,686 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 5; Ended sorting combinations.
+2019-05-15 00:05:19,776 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Started generating combinations.
+2019-05-15 00:05:21,986 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Generated 1806 combinations in 02.209 seconds.
+2019-05-15 00:05:22,077 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Removing empty nodes from combinations.
+2019-05-15 00:05:22,173 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Removing duplicate combinations.
+2019-05-15 00:05:22,309 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Final list of 70 combinations.
+2019-05-15 00:05:22,559 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Generating permutations.
+2019-05-15 00:05:22,640 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Generated 0 permutations.
+2019-05-15 00:05:22,728 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Started calculation of permutations per combinations.
+2019-05-15 00:05:22,818 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Generated 0 permutations in 00.090 seconds.
+2019-05-15 00:05:22,898 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Started sorting combinations.
+2019-05-15 00:05:22,976 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 6; Ended sorting combinations.
+2019-05-15 00:05:23,069 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Started generating combinations.
+2019-05-15 00:05:30,095 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Generated 8558 combinations in 07.026 seconds.
+2019-05-15 00:05:30,188 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Removing empty nodes from combinations.
+2019-05-15 00:05:30,397 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Removing duplicate combinations.
+2019-05-15 00:05:30,602 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Final list of 194 combinations.
+2019-05-15 00:05:30,843 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Generating permutations.
+2019-05-15 00:05:30,930 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Generated 0 permutations.
+2019-05-15 00:05:31,016 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Started calculation of permutations per combinations.
+2019-05-15 00:05:31,113 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Generated 0 permutations in 00.097 seconds.
+2019-05-15 00:05:31,197 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Started sorting combinations.
+2019-05-15 00:05:31,285 INFO hr.markic.rlc.service.CombinatorService [Thread-36] NUM. OF ELEMS: 7; Ended sorting combinations.
+2019-05-15 00:06:36,120 INFO hr.markic.rlc.service.CombinatorService [Thread-37] NUM. OF ELEMS: 1; Started generating combinations.
+2019-05-15 00:06:36,589 INFO hr.markic.rlc.service.CombinatorService [Thread-37] NUM. OF ELEMS: 1; Generated 2 combinations in 00.469 seconds.
+2019-05-15 00:06:36,666 INFO hr.markic.rlc.service.CombinatorService [Thread-37] NUM. OF ELEMS: 1; Removing empty nodes from combinations.
+2019-05-15 00:06:36,747 INFO hr.markic.rlc.service.CombinatorService [Thread-37] NUM. OF ELEMS: 1; Removing duplicate combinations.
+2019-05-15 00:06:36,836 INFO hr.markic.rlc.service.CombinatorService [Thread-37] NUM. OF ELEMS: 1; Final list of 2 combinations.
+2019-05-15 00:10:53,814 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m32s339ms849µs542ns).
+2019-05-15 00:10:53,815 INFO hr.markic.rlc.service.CombinatorService [Thread-37] NUM. OF ELEMS: 1; Generating permutations.
+2019-05-15 00:10:53,902 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-21] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 00:10:53,910 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-21] Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-05-15 00:10:53,925 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-21] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 00:10:53,933 INFO com.zaxxer.hikari.HikariDataSource [Thread-21] HikariPool-1 - Shutdown initiated...
+2019-05-15 00:11:39,769 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplication on stepinceva-HP-ProBook-4730s with PID 392 (/home/stepinceva/IdeaProjects/rlc-combinator/target/classes started by stepinceva in /home/stepinceva/IdeaProjects/rlc-combinator)
+2019-05-15 00:11:39,773 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-15 00:11:39,775 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-05-15 00:11:41,827 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 00:11:42,080 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 234ms. Found 3 repository interfaces.
+2019-05-15 00:11:43,796 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3363354] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-15 00:11:45,040 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 5000 (http)
+2019-05-15 00:11:45,117 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-5000"]
+2019-05-15 00:11:45,193 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-05-15 00:11:45,195 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-05-15 00:11:45,214 INFO org.apache.juli.logging.DirectJDKLog [main] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-05-15 00:11:45,627 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-05-15 00:11:45,628 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5699 ms
+2019-05-15 00:11:46,096 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-05-15 00:11:46,824 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-05-15 00:11:47,011 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-05-10 00:18:03,022 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
-2019-05-10 00:18:03,027 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
-2019-05-10 00:18:03,364 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-10 00:18:03,677 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-05-10 00:18:11,565 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
-2019-05-10 00:18:11,601 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40c2ce52
-2019-05-10 00:18:14,446 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-10 00:18:17,633 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-10 00:18:20,290 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49cceb19, org.springframework.security.web.context.SecurityContextPersistenceFilter@5bf523e3, org.springframework.security.web.header.HeaderWriterFilter@6124dda2, org.springframework.web.filter.CorsFilter@197d5a87, org.springframework.security.web.authentication.logout.LogoutFilter@6fe5da76, hr.markic.rlc.security.jwt.JwtTokenFilter@131d977f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65259c53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73ddb7ef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@616f81b5, org.springframework.security.web.session.SessionManagementFilter@26a33cf, org.springframework.security.web.access.ExceptionTranslationFilter@45ad3cd8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c82ad22]
-2019-05-10 00:18:20,529 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplicationTests in 24.407 seconds (JVM running for 26.566)
-2019-05-10 00:18:20,946 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-3] Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-10 00:18:20,955 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
-2019-05-10 00:18:20,997 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
-2019-05-10 00:19:23,029 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplicationTests on hrgovici with PID 15922 (started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
-2019-05-10 00:19:23,033 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-05-10 00:19:23,036 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-05-10 00:19:25,939 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-10 00:19:26,229 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 275ms. Found 3 repository interfaces.
-2019-05-10 00:19:27,909 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a083213] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-10 00:19:28,777 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2019-05-10 00:19:29,870 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2019-05-10 00:19:29,990 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+2019-05-15 00:11:47,248 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
+2019-05-15 00:11:47,252 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-05-15 00:11:47,829 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-15 00:11:48,266 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-05-15 00:12:05,305 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-05-15 00:12:05,319 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5978ba12
+2019-05-15 00:12:06,596 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 00:12:08,090 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-15 00:12:08,948 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c3d056, org.springframework.security.web.context.SecurityContextPersistenceFilter@372ea7fa, org.springframework.security.web.header.HeaderWriterFilter@8d15c75, org.springframework.web.filter.CorsFilter@346b793b, org.springframework.security.web.authentication.logout.LogoutFilter@5455f457, hr.markic.rlc.security.jwt.JwtTokenFilter@396ea7ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12dac814, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bf64e55, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44496e0c, org.springframework.security.web.session.SessionManagementFilter@257f8040, org.springframework.security.web.access.ExceptionTranslationFilter@60bd3a8b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49a14b44]
+2019-05-15 00:12:09,069 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-5000"]
+2019-05-15 00:12:09,112 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 5000 (http) with context path ''
+2019-05-15 00:12:09,117 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplication in 30.716 seconds (JVM running for 37.499)
+2019-05-15 00:12:09,120 INFO hr.markic.rlc.RlcCombinatorApplication [main] ------------------Application started.----------------------
+2019-05-15 00:12:33,344 INFO org.apache.juli.logging.DirectJDKLog [http-nio-5000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-15 00:12:33,345 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-5000-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-05-15 00:12:33,364 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-5000-exec-1] Completed initialization in 18 ms
+2019-05-15 00:12:33,749 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-5000-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2019-05-15 00:12:34,600 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Started generating combinations.
+2019-05-15 00:12:35,349 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Generated 2 combinations in 00.742 seconds.
+2019-05-15 00:12:35,439 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Removing empty nodes from combinations.
+2019-05-15 00:12:35,519 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Removing duplicate combinations.
+2019-05-15 00:12:35,601 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Final list of 2 combinations.
+2019-05-15 00:12:36,019 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Generating permutations.
+2019-05-15 00:12:36,109 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Generated 12 permutations.
+2019-05-15 00:12:36,188 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Started calculation of permutations per combinations.
+2019-05-15 00:12:36,441 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Generated 0 permutations in 00.253 seconds.
+2019-05-15 00:12:36,530 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Started sorting combinations.
+2019-05-15 00:12:36,681 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 1; Ended sorting combinations.
+2019-05-15 00:12:36,818 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Started generating combinations.
+2019-05-15 00:12:36,964 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Generated 6 combinations in 00.144 seconds.
+2019-05-15 00:12:37,101 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Removing empty nodes from combinations.
+2019-05-15 00:12:37,246 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Removing duplicate combinations.
+2019-05-15 00:12:37,578 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Final list of 2 combinations.
+2019-05-15 00:12:37,896 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Generating permutations.
+2019-05-15 00:12:38,002 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Generated 140 permutations.
+2019-05-15 00:12:38,081 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Started calculation of permutations per combinations.
+2019-05-15 00:12:38,621 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Generated 2 permutations in 00.540 seconds.
+2019-05-15 00:12:38,708 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Started sorting combinations.
+2019-05-15 00:12:38,790 INFO hr.markic.rlc.service.CombinatorService [Thread-22] NUM. OF ELEMS: 2; Ended sorting combinations.
+2019-05-15 00:14:10,838 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-21] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 00:14:10,847 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Thread-21] Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-05-15 00:14:10,891 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-21] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 00:14:10,900 INFO com.zaxxer.hikari.HikariDataSource [Thread-21] HikariPool-1 - Shutdown initiated...
+2019-05-15 00:14:10,915 INFO com.zaxxer.hikari.HikariDataSource [Thread-21] HikariPool-1 - Shutdown completed.
+2019-05-15 00:18:41,190 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplicationTests on stepinceva-HP-ProBook-4730s with PID 2286 (started by stepinceva in /home/stepinceva/IdeaProjects/rlc-combinator)
+2019-05-15 00:18:41,192 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-15 00:18:41,194 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-05-15 00:18:42,723 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 00:18:42,853 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 117ms. Found 3 repository interfaces.
+2019-05-15 00:18:43,759 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b22e6abb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-15 00:18:44,436 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-05-15 00:18:45,640 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-05-15 00:18:45,784 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-05-10 00:19:30,112 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
-2019-05-10 00:19:30,116 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
-2019-05-10 00:19:30,415 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-10 00:19:30,732 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-05-10 00:19:38,587 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
-2019-05-10 00:19:38,598 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40c2ce52
-2019-05-10 00:19:39,749 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-10 00:19:41,169 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-10 00:19:43,313 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f75fd1d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d593b56, org.springframework.security.web.header.HeaderWriterFilter@2d230cff, org.springframework.web.filter.CorsFilter@212e39ee, org.springframework.security.web.authentication.logout.LogoutFilter@492c8137, hr.markic.rlc.security.jwt.JwtTokenFilter@638d2ce3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29188050, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2591d23a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79617c3d, org.springframework.security.web.session.SessionManagementFilter@3d59933, org.springframework.security.web.access.ExceptionTranslationFilter@1b98355f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61d011e]
-2019-05-10 00:19:43,513 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplicationTests in 22.023 seconds (JVM running for 25.758)
-2019-05-10 00:19:43,749 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-3] Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-10 00:19:43,760 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
-2019-05-10 00:19:43,778 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
-2019-05-10 00:21:36,186 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplicationTests on hrgovici with PID 16275 (started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
-2019-05-10 00:21:36,192 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-05-10 00:21:36,199 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-05-10 00:21:40,193 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-05-10 00:21:40,734 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 478ms. Found 3 repository interfaces.
-2019-05-10 00:21:43,671 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f9bd3d91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-05-10 00:21:44,529 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2019-05-10 00:21:46,000 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2019-05-10 00:21:46,299 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+2019-05-15 00:18:45,907 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
+2019-05-15 00:18:45,910 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-05-15 00:18:46,122 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-15 00:18:46,446 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-05-15 00:19:03,418 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-05-15 00:19:03,426 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@19705650
+2019-05-15 00:19:04,329 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 00:19:05,706 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-15 00:19:07,135 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61c4fc34, org.springframework.security.web.context.SecurityContextPersistenceFilter@36c1b6ff, org.springframework.security.web.header.HeaderWriterFilter@17873842, org.springframework.web.filter.CorsFilter@6f9999f6, org.springframework.security.web.authentication.logout.LogoutFilter@1e6e29d6, hr.markic.rlc.security.jwt.JwtTokenFilter@5e085259, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@278cbf5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73e63b4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68ea1eb5, org.springframework.security.web.session.SessionManagementFilter@241abc2, org.springframework.security.web.access.ExceptionTranslationFilter@3ec98000, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@206e5183]
+2019-05-15 00:19:07,341 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplicationTests in 27.458 seconds (JVM running for 28.693)
+2019-05-15 00:19:07,576 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 00:19:07,583 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2019-05-15 00:19:07,612 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
+2019-05-15 00:19:36,276 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplicationTests on stepinceva-HP-ProBook-4730s with PID 2647 (started by stepinceva in /home/stepinceva/IdeaProjects/rlc-combinator)
+2019-05-15 00:19:36,289 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-15 00:19:36,290 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-05-15 00:19:39,496 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 00:19:39,756 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 237ms. Found 3 repository interfaces.
+2019-05-15 00:19:41,083 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2e75057] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-15 00:19:42,003 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-05-15 00:19:43,317 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-05-15 00:19:43,608 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-05-10 00:21:46,432 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
-2019-05-10 00:21:46,435 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
-2019-05-10 00:21:46,779 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-05-10 00:21:47,181 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-05-10 00:21:55,102 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
-2019-05-10 00:21:55,117 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6a5e167a
-2019-05-10 00:21:58,272 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-05-10 00:21:59,867 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-05-10 00:22:04,800 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46591e98, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a2f401a, org.springframework.security.web.header.HeaderWriterFilter@6adcf059, org.springframework.web.filter.CorsFilter@5b6cc344, org.springframework.security.web.authentication.logout.LogoutFilter@4bff28e7, hr.markic.rlc.security.jwt.JwtTokenFilter@2110684a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47b961e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@380e33c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@83e635f, org.springframework.security.web.session.SessionManagementFilter@1fc5c0b2, org.springframework.security.web.access.ExceptionTranslationFilter@6cc90398, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@148b6f95]
-2019-05-10 00:22:05,265 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplicationTests in 30.959 seconds (JVM running for 35.072)
-2019-05-10 00:22:05,782 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-3] Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-10 00:22:05,804 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
-2019-05-10 00:22:05,865 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
+2019-05-15 00:19:43,779 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
+2019-05-15 00:19:43,783 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-05-15 00:19:44,093 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-15 00:19:44,625 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-05-15 00:20:01,970 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-05-15 00:20:01,979 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@75ad30c1
+2019-05-15 00:20:02,879 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 00:20:04,270 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-15 00:20:05,720 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e096ac0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c41931a, org.springframework.security.web.header.HeaderWriterFilter@1f381eaf, org.springframework.web.filter.CorsFilter@d7c00de, org.springframework.security.web.authentication.logout.LogoutFilter@6c167296, hr.markic.rlc.security.jwt.JwtTokenFilter@11fa11b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f030217, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e5ed0d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29ddaa8e, org.springframework.security.web.session.SessionManagementFilter@36c1b6ff, org.springframework.security.web.access.ExceptionTranslationFilter@65dd2191, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21539796]
+2019-05-15 00:20:05,894 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplicationTests in 31.395 seconds (JVM running for 35.161)
+2019-05-15 00:20:06,131 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-2] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 00:20:06,139 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2019-05-15 00:20:06,181 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.

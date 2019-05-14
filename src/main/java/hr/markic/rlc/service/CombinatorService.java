@@ -1,12 +1,16 @@
 package hr.markic.rlc.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import hr.markic.rlc.config.PropertyConfig;
 import hr.markic.rlc.config.PusherConfig;
 import hr.markic.rlc.domain.BaseElement;
+import hr.markic.rlc.domain.User;
 import hr.markic.rlc.enums.BaseElementEnum;
 import hr.markic.rlc.enums.CircuitEnum;
 import hr.markic.rlc.model.CircuitElement;
 import hr.markic.rlc.model.CombinationModel;
+import hr.markic.rlc.model.PusherModel;
 import hr.markic.rlc.rest.mapper.CombinationMapper;
 import hr.markic.rlc.util.ObjectUtils;
 import hr.markic.rlc.util.TimeUtils;
@@ -28,17 +32,17 @@ public class CombinatorService {
     CapacitorService capacitorService;
     ResistorService resistorService;
     PermutationCombService permutationCombService;
-    AuthService authService;
+    ObjectMapper objectMapper;
 
     private static final Logger log = LoggerFactory.getLogger(CombinatorService.class);
 
     @Autowired
     public CombinatorService(CapacitorService capacitorService, ResistorService resistorService,
-                             PermutationCombService permutationCombService, AuthService authService){
+                             PermutationCombService permutationCombService, ObjectMapper objectMapper){
         this.capacitorService = capacitorService;
         this.resistorService = resistorService;
         this.permutationCombService = permutationCombService;
-        this.authService = authService;
+        this.objectMapper = objectMapper;
     }
 
     /**
@@ -48,9 +52,12 @@ public class CombinatorService {
      * @param maxNumCombResults
      * @param elementType
      * @param allowedErrorPercentage
+     * @param user
      * @return
      */
-    public List<CombinationModel> generateCombinationModels(Double value, Integer minNumCombResults, Integer maxNumCombResults, BaseElementEnum elementType, int allowedErrorPercentage) {
+    public void generateCombinationModels(Double value, Integer minNumCombResults, Integer maxNumCombResults,
+                                          BaseElementEnum elementType, int allowedErrorPercentage, User user) {
+
         int maxNumElements = PropertyConfig.getInstance().getIntProperty("app.combinator.maxelements.size");
 
         List<CombinationModel> modelList = new java.util.ArrayList<>();
@@ -58,23 +65,23 @@ public class CombinatorService {
             if (modelList != null && modelList.size() >= minNumCombResults){
                 break;
             }
-            generateCombinationModelsPerElemSize(value, elementType, allowedErrorPercentage, modelList, i);
+            generateCombinationModelsPerElemSize(value, elementType, allowedErrorPercentage, modelList, i, user);
         }
 
-        return modelList.subList(0, modelList.size()>=maxNumCombResults?maxNumCombResults: modelList.size());
+        pushAndLogData(null, modelList.subList(0, modelList.size()>=maxNumCombResults?maxNumCombResults: modelList.size()), false);
     }
 
     private void generateCombinationModelsPerElemSize(Double value, BaseElementEnum elementType, int allowedErrorPercentage,
-                                                      List<CombinationModel> modelList, int numElements) {
+                                                      List<CombinationModel> modelList, int numElements, User user) {
         List<CircuitElement> combinations = new ArrayList<>();
         CircuitElement root = new CircuitElement();
         long ms = System.currentTimeMillis();
-        logMessage("Started generating combinations.", numElements);
+        logMessageElements("Started generating combinations.", numElements);
         generateCombinations(numElements, 0, root, root, null, combinations);
         long ms2 = System.currentTimeMillis();
-        logMessage("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".", numElements);
+        logMessageElements("Generated " + combinations.size() +" combinations in " + TimeUtils.formatMs(ms2-ms) + ".", numElements);
 
-        logMessage("Removing empty nodes from combinations.", numElements);
+        logMessageElements("Removing empty nodes from combinations.", numElements);
         //remove empty nodes
         for (CircuitElement combination  : combinations) {
             removeEmptyNodes(combination, true, false);
@@ -84,7 +91,7 @@ public class CombinatorService {
             removeEmptyNodes(combination, false, true);
         }
 
-        logMessage("Removing duplicate combinations.", numElements);
+        logMessageElements("Removing duplicate combinations.", numElements);
         //remove duplicate combinations
         List<CircuitElement> filtratedCombs = new ArrayList<>();
         Set<String> setComb = new HashSet<>();
@@ -95,28 +102,28 @@ public class CombinatorService {
                 filtratedCombs.add(combination);
             }
         }
-        logMessage("Final list of " + filtratedCombs.size() + " combinations.", numElements);
+        logMessageElements("Final list of " + filtratedCombs.size() + " combinations.", numElements);
 
         //iterate over combinations with element values and filter the list
         List<? extends BaseElement> listRLC = null;
         if (elementType.equals(BaseElementEnum.CAPACITOR)){
-            listRLC = capacitorService.findAll(authService.getCurrentUser());
+            listRLC = capacitorService.findAll(user);
         } else if (elementType.equals(BaseElementEnum.RESISTOR)){
-            listRLC = resistorService.findAll(authService.getCurrentUser());
+            listRLC = resistorService.findAll(user);
         }
 
-        logMessage("Generating permutations.", numElements);
+        logMessageElements("Generating permutations.", numElements);
         List<Double[]> permutations = permutationCombService.generatePermutations(listRLC, numElements, value);
-        logMessage("Generated " + permutations.size() + " permutations.", numElements);
+        logMessageElements("Generated " + permutations.size() + " permutations.", numElements);
 
         ms = System.currentTimeMillis();
-        logMessage("Started calculation of permutations per combinations.", numElements);
+        logMessageElements("Started calculation of permutations per combinations.", numElements);
         modelList.addAll(CombinationMapper.prepareCombinationModelList(filtratedCombs, elementType,
                 permutations, allowedErrorPercentage, value));
         ms2 = System.currentTimeMillis();
-        logMessage("Generated " + modelList.size() + " permutations in "  +TimeUtils.formatMs(ms2-ms) + ".", numElements);
+        logMessageElements("Generated " + modelList.size() + " permutations in "  +TimeUtils.formatMs(ms2-ms) + ".", numElements);
 
-        logMessage("Started sorting combinations.", numElements);
+        logMessageElements("Started sorting combinations.", numElements);
         modelList.sort(new Comparator<CombinationModel>() {
             @Override
             public int compare(CombinationModel o1, CombinationModel o2) {
@@ -130,15 +137,25 @@ public class CombinatorService {
                 return 0;
             }
         });
-        logMessage("Ended sorting combinations.", numElements);
+        logMessageElements("Ended sorting combinations.", numElements);
     }
 
-    private void logMessage(String message, int numElements) {
+    private void pushAndLogData(String message, List<CombinationModel> combinations, Boolean logFile) {
+        if (logFile)log.info(message);
+        PusherModel model = new PusherModel(combinations, message);
+        Long threadId = Thread.currentThread().getId();
+        try {
+            PusherConfig.getInstance().trigger(PropertyConfig.getInstance().getProperty("pusher.combinator.channel"),
+                    PropertyConfig.getInstance().getProperty("pusher.combinator.event") + threadId,
+                    objectMapper.writeValueAsString(model));
+        } catch (JsonProcessingException e) {
+            log.error("Could not serialize object.", e);
+        }
+    }
+
+    private void logMessageElements(String message, int numElements) {
         String msg = "NUM. OF ELEMS: " + numElements + "; " + message;
-        log.info(msg);
-        PusherConfig.getInstance().trigger(PropertyConfig.getInstance().getProperty("pusher.combinator.channel"),
-                                            PropertyConfig.getInstance().getProperty("pusher.combinator.event"),
-                                                msg);
+        pushAndLogData(msg, null, true);
     }
 
     /**
