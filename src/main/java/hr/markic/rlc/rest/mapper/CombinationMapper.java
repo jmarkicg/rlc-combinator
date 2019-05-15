@@ -91,7 +91,7 @@ public class CombinationMapper {
         CircuitEnum parentType = combination.getParent() != null? combination.getParent().getCircuitType() : null;
 
         if (type.equals(CircuitEnum.ELEMENT)){
-            if (parentType != null && (parentType.equals(CircuitEnum.PARALLEL) && elemType.equals(BaseElementEnum.RESISTOR)) ||
+            if (parentType != null && (parentType.equals(CircuitEnum.PARALLEL) && isInductorOrResistor(elemType)) ||
                     (parentType.equals(CircuitEnum.SERIES) && elemType.equals(BaseElementEnum.CAPACITOR))){
                 comb += "1/E";
             } else {
@@ -101,9 +101,9 @@ public class CombinationMapper {
 
         List<CircuitElement> elems = combination.getElementList();
         if (elems != null && elems.size() > 0){
-            if ((parentType != null && ((parentType.equals(CircuitEnum.PARALLEL) && elemType.equals(BaseElementEnum.RESISTOR)) ||
+            if ((parentType != null && ((parentType.equals(CircuitEnum.PARALLEL) && isInductorOrResistor(elemType)) ||
                     (parentType.equals(CircuitEnum.SERIES) && elemType.equals(BaseElementEnum.CAPACITOR)))) ||
-                (type != null && (type.equals(CircuitEnum.PARALLEL) && elemType.equals(BaseElementEnum.RESISTOR)) ||
+                (type != null && (type.equals(CircuitEnum.PARALLEL) && isInductorOrResistor(elemType)) ||
                     (type.equals(CircuitEnum.SERIES) && elemType.equals(BaseElementEnum.CAPACITOR)))){
                 comb += " 1/(";
             }else {
@@ -121,6 +121,10 @@ public class CombinationMapper {
         }
 
         return comb;
+    }
+
+    public static Boolean isInductorOrResistor(BaseElementEnum type){
+       return (type.equals(BaseElementEnum.RESISTOR) || type.equals(BaseElementEnum.INDUCTOR));
     }
 
 

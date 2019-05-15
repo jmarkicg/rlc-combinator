@@ -31,6 +31,7 @@ public class CombinatorService {
 
     CapacitorService capacitorService;
     ResistorService resistorService;
+    InductorService inductorService;
     PermutationCombService permutationCombService;
     ObjectMapper objectMapper;
 
@@ -38,10 +39,12 @@ public class CombinatorService {
 
     @Autowired
     public CombinatorService(CapacitorService capacitorService, ResistorService resistorService,
-                             PermutationCombService permutationCombService, ObjectMapper objectMapper){
+                             PermutationCombService permutationCombService,
+                             InductorService inductorService, ObjectMapper objectMapper){
         this.capacitorService = capacitorService;
         this.resistorService = resistorService;
         this.permutationCombService = permutationCombService;
+        this.inductorService = inductorService;
         this.objectMapper = objectMapper;
     }
 
@@ -110,6 +113,8 @@ public class CombinatorService {
             listRLC = capacitorService.findAll(user);
         } else if (elementType.equals(BaseElementEnum.RESISTOR)){
             listRLC = resistorService.findAll(user);
+        } else if (elementType.equals(BaseElementEnum.INDUCTOR)){
+            listRLC = inductorService.findAll(user);
         }
 
         logMessageElements("Generating permutations.", numElements);

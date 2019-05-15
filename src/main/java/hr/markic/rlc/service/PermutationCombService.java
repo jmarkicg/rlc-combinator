@@ -1,27 +1,32 @@
 package hr.markic.rlc.service;
 
 import hr.markic.rlc.domain.BaseElement;
-import hr.markic.rlc.util.ObjectUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Service
 public class PermutationCombService {
-
-    CapacitorService capacitorService;
-    ResistorService resistorService;
+//
+//    CapacitorService capacitorService;
+//    ResistorService resistorService;
+//    InductorService inductorService;
 
     private static final Logger log = LoggerFactory.getLogger(CombinatorService.class);
 
-    @Autowired
-    public PermutationCombService(CapacitorService capacitorService, ResistorService resistorService){
-        this.capacitorService = capacitorService;
-        this.resistorService = resistorService;
-    }
+//    @Autowired
+//    public PermutationCombService(CapacitorService capacitorService, ResistorService resistorService,
+//                                  InductorService inductorService){
+//        this.capacitorService = capacitorService;
+//        this.resistorService = resistorService;
+//        this.inductorService = inductorService;
+//    }
 
     public List<Double[]> generatePermutations(List<? extends BaseElement> listRLC, Integer numItems, Double value) {
         List<Double[]> permutations = new ArrayList<>();
@@ -32,7 +37,8 @@ public class PermutationCombService {
         return permutations;
     }
 
-    private void permutateCombinations(List<Double[]> permutations, Set<String> permSet, Integer current, Integer numItems, Double value, List<BaseElement> elems, Double[] permutation){
+    private void permutateCombinations(List<Double[]> permutations, Set<String> permSet, Integer current,
+                                       Integer numItems, Double value, List<BaseElement> elems, Double[] permutation){
         if (current == numItems){
             if (!permSet.contains(getPermutationKey(permutation))){
                 permSet.add(getPermutationKey(permutation));

@@ -2,7 +2,8 @@ package hr.markic.rlc.enums;
 
 public enum BaseElementEnum {
     CAPACITOR ("capacitor"),
-    RESISTOR ("resistor");
+    RESISTOR ("resistor"),
+    INDUCTOR ("inductor");
 
     private String type;
 
