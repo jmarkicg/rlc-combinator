@@ -55,3 +55,29 @@
 2019-05-23 23:00:13,686 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Generated 2 permutations in 00.074 seconds.
 2019-05-23 23:00:13,737 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Started sorting combinations.
 2019-05-23 23:00:13,793 INFO hr.markic.rlc.service.CombinatorService [Thread-29] NUM. OF ELEMS: 1; Ended sorting combinations.
+2019-05-23 23:09:39,025 INFO org.springframework.boot.StartupInfoLogger [main] Starting RlcCombinatorApplicationTests on hrgovici with PID 7187 (started by hrgovici in /home/hrgovici/IdeaProjects/rlc-combinator)
+2019-05-23 23:09:39,028 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-05-23 23:09:39,030 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-05-23 23:09:42,550 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-23 23:09:43,158 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 576ms. Found 4 repository interfaces.
+2019-05-23 23:09:44,195 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d65a19a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-23 23:09:44,826 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-05-23 23:09:46,291 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-05-23 23:09:46,436 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-23 23:09:46,672 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.7.Final}
+2019-05-23 23:09:46,675 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-05-23 23:09:47,082 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-23 23:09:47,427 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-05-23 23:09:55,541 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-05-23 23:09:55,575 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@78cfa264
+2019-05-23 23:09:57,659 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-23 23:09:59,456 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-23 23:10:02,445 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4583b617, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e2772a9, org.springframework.security.web.header.HeaderWriterFilter@6e017950, org.springframework.web.filter.CorsFilter@22a63740, org.springframework.security.web.authentication.logout.LogoutFilter@5c1dd18, hr.markic.rlc.security.jwt.JwtTokenFilter@211da640, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fa18f87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@573870cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ec92631, org.springframework.security.web.session.SessionManagementFilter@fceab5d, org.springframework.security.web.access.ExceptionTranslationFilter@2f166d61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42ffbab6]
+2019-05-23 23:10:02,621 INFO org.springframework.boot.StartupInfoLogger [main] Started RlcCombinatorApplicationTests in 24.784 seconds (JVM running for 29.503)
+2019-05-23 23:10:02,884 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-3] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-23 23:10:02,904 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
+2019-05-23 23:10:02,918 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
+2019-05-23 23:12:23,353 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-5000-exec-9] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-23 23:12:23,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [http-nio-5000-exec-9] Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
