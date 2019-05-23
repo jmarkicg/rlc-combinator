@@ -36,7 +36,7 @@ public class CombinatorController {
     public long generateCombinations(@PathVariable Double value,
                                                        @PathVariable Integer minNumCombResults,
                                                        @PathVariable Integer maxNumCombResults,
-                                                       @PathVariable Integer allowedErrorPercentage,
+                                                       @PathVariable Double allowedErrorPercentage,
                                                        @PathVariable BaseElementEnum elementType){
         Thread thread = new Thread(new CombinatorRunnable(
                 combinatorService, value, minNumCombResults, maxNumCombResults, elementType, allowedErrorPercentage, authService.getCurrentUser()));

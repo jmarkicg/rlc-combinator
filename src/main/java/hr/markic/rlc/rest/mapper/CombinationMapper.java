@@ -20,7 +20,7 @@ public class CombinationMapper {
      * @return
      */
     public static List<CombinationModel> prepareCombinationModelList(List<CircuitElement> combinations, BaseElementEnum elemType,
-                                                                     List<Double[]> permutations, int allowedErrorPercentage,
+                                                                     List<Double[]> permutations, Double allowedErrorPercentage,
                                                                      Double value) {
         List<CombinationModel> modelList = null;
         if (combinations != null){
@@ -56,13 +56,13 @@ public class CombinationMapper {
         return modelList;
     }
 
-    private static double getAccuracy(Double value, int allowedErrorPercentage, Double requestedValue) {
+    private static double getAccuracy(Double value, Double allowedErrorPercentage, Double requestedValue) {
         Double diff = Math.abs(requestedValue - value);
         double currErrorPerc =  (diff / requestedValue)*100;
         return currErrorPerc;
     }
 
-    private static boolean checkAccuracy(Double value, int allowedErrorPercentage, Double requestedValue) {
+    private static boolean checkAccuracy(Double value, Double allowedErrorPercentage, Double requestedValue) {
         double currErrorPerc = getAccuracy(value, allowedErrorPercentage, requestedValue);
         if (currErrorPerc <= allowedErrorPercentage){
             return true;

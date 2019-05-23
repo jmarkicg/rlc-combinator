@@ -59,7 +59,7 @@ public class CombinatorService {
      * @return
      */
     public void generateCombinationModels(Double value, Integer minNumCombResults, Integer maxNumCombResults,
-                                          BaseElementEnum elementType, int allowedErrorPercentage, User user) {
+                                          BaseElementEnum elementType, Double allowedErrorPercentage, User user) {
 
         int maxNumElements = PropertyConfig.getInstance().getIntProperty("app.combinator.maxelements.size");
 
@@ -74,7 +74,7 @@ public class CombinatorService {
         pushAndLogData(null, modelList.subList(0, modelList.size()>=maxNumCombResults?maxNumCombResults: modelList.size()), false);
     }
 
-    private void generateCombinationModelsPerElemSize(Double value, BaseElementEnum elementType, int allowedErrorPercentage,
+    private void generateCombinationModelsPerElemSize(Double value, BaseElementEnum elementType, Double allowedErrorPercentage,
                                                       List<CombinationModel> modelList, int numElements, User user) {
         List<CircuitElement> combinations = new ArrayList<>();
         CircuitElement root = new CircuitElement();

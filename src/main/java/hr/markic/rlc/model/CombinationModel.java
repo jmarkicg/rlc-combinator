@@ -1,7 +1,5 @@
 package hr.markic.rlc.model;
 
-import java.util.List;
-
 public class CombinationModel {
     String combString;
     String combEquation;
@@ -36,7 +34,7 @@ public class CombinationModel {
         return errorPercentage;
     }
 
-    public void setErrorPercentage(double errorPercentage) {
+    public void setErrorPercentage(Double errorPercentage) {
         this.errorPercentage = errorPercentage;
     }
 

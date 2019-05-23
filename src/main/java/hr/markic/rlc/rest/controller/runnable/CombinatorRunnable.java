@@ -11,11 +11,11 @@ public class CombinatorRunnable implements Runnable {
     private Integer minNumCombResults;
     private Integer maxNumCombResults;
     private BaseElementEnum elementType;
-    private int allowedErrorPercentage;
+    private Double allowedErrorPercentage;
     private User user;
 
     public CombinatorRunnable(CombinatorService service, Double value, Integer minNumCombResults,
-                              Integer maxNumCombResults, BaseElementEnum elementType, int allowedErrorPercentage,
+                              Integer maxNumCombResults, BaseElementEnum elementType, Double allowedErrorPercentage,
                               User user) {
         this.service = service;
         this.value = value;
