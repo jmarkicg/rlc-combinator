@@ -1,4 +1,4 @@
-package hr.markic.rlc;
+package hr.markic.rlc.config.init;
 
 import hr.markic.rlc.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
