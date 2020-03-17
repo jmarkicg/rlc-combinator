@@ -3,9 +3,11 @@ package hr.markic.rlc.config;
 import com.pusher.rest.Pusher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 
 @Component
+@DependsOn({"propertyConfig"})
 public class PusherConfig {
 
     private static PusherConfig instance;
